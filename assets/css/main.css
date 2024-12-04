@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Readex+Pro:wght@160..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: auto;
+}
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    position: relative;
+    background-color: var(--color-bkg);
+}
+button, p, h1, h2, h3, h4, h5, h6, ul, li{
+    margin: 0;
+    height: auto;
+}
+h1, h2, h3, h4, h5, h6, p, a, li{
+    color: var(--color-text);
+}
+h1{
+    font-size: var(--font-size-h1);
+    font-family: var(--font-family-readex);
+    font-weight: var(--font-weight-h1);
+}
+h2 {
+    font-size: var(--font-size-h2);
+    font-family: var(--font-family-readex);
+    font-weight: var(--font-weight-h2);
+}
+h3{
+    font-size: var(--font-size-h3);
+    font-family: var(--font-family-readex);
+    font-weight: var(--font-weight-h1);
+}
+h4{
+    font-size: var(--font-size-h4);
+    font-family: var(--font-family-readex);
+    font-weight: var(--font-weight-h4);
+}
+h5{
+    font-size: var(--font-size-h5);
+    font-family: var(--font-family-readex);
+    font-weight: var(--font-weight-h4);
+}
+
+a, button{
+    cursor: pointer;
+}
+p, a, button, li {
+    font-size: var(--font-size-p);
+    font-family: var(--font-family-mulish);
+}
+ul{
+    margin: 0;
+}
+ul, li {
+    padding: 0;
+    list-style: none;
+}
+button{
+    border: none;
+    padding: var(--padding-button);
+    border-radius: 20px;
+}
+section {
+    padding-inline: var(--padding-inline-page);
+    margin-bottom: var(--margin-section);
+}
+section.grid{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--gap-grid);
+}
+
+img.logo{
+    width: var(--w-logo);
+}
+img.portrait{
+    border-radius: var(--border-radius-general);
+    width: 100%;
+}
+pre {
+    color: var(--color-text);
+}
+
+/*
+    *
+    * CALL TO ACTION BUTTONS (CTA)
+    *
+*/
+.cta{
+    background-color: var(--color-link);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-button);
+    width: fit-content;
+    height: fit-content;
+}
+.cta p{
+    color: var(--color-bkg);
+    font-size: var(--font-size-p);
+}
+.cta svg{
+    width: var(--font-size-p);
+    height: var(--font-size-p);
+}
+.cta svg path{
+    fill: var(--color-bkg);
+}
+
+/*
+    *
+    * GENERAL CLASSES
+    *
+*/
+.header-logo{
+    display: flex;
+    grid-area: logo;
+}
+.bullet-point-container{
+    display: flex;
+    gap: var(--gap-bullet-point);
+}
+.bullet-point{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size-h3);
+    width: var(--font-size-h3);
+    height: var(--font-size-h3);
+    border-radius: 50%;
+}
+.bullet-point span{
+    font-weight: var(--font-weight-h1);
+    color: var(--color-bkg)
+}
+
+.project-caption > p {
+    font-size: var(--font-size-caption);
+}
+
+.project-logo{
+    width: 100%;
+}
+.mockup{
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius-general);
+}
+.attributes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-button);
+}
+.attributes > li {
+    border: 1px solid white;
+    border-radius: var(--border-radius-general);
+    padding: var(--padding-button); 
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+}
+.fact-container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-general);
+}
+.fact{
+    display: flex;
+    align-items: center;
+    gap: var(--gap-general);
+}
+.fact svg{
+    width: var(--font-size-fact-svg);
+    height: var(--font-size-fact-svg);
+    transform: rotate(-90deg);
+}
+/*
+    *
+    * DYNAMIC CLASSES
+    *
+*/
+.green{
+    color: var(--color-green);
+}
+.pink{
+    color: var(--color-pink);
+}
+.blue{
+    color: var(--color-blue);
+}
+.green-bkg{
+    background-color: var(--color-green);
+}
+.pink-bkg{
+    background-color: var(--color-pink);
+}
+.blue-bkg{
+    background-color: var(--color-blue);
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+
+:root{
+    /* 
+        * 
+        * COLORS
+        *
+    */
+    --color-bkg: #171e29;
+    --color-text: #ececec;
+    --color-text-fade: #797979;
+    --color-green: #26F527;
+    --color-pink: #ff1178;
+    --color-blue: #0abcf7;
+    --color-link: #ffff11;
+
+    --w-logo: clamp(3rem, 4vw, 6rem);
+    /* 
+        * 
+        * GAPS
+        *
+    */
+    --gap-grid: clamp(1rem, 2vw, 2rem);
+    --gap-button: clamp(0.5rem, 1vw, 1rem);
+    --gap-bullet-point: clamp(1rem, 3vw, 3rem);
+    --gap-general: clamp(0.5rem, 0.5vw, 1.2rem);
+    /* 
+        * 
+        * PADDINGS
+        *
+    */
+    --padding-inline-page: clamp(1rem, 2vw, 2rem);
+    --padding-block-general: clamp(1rem, 1vw, 2rem);
+    --padding-button: 
+        clamp(0.5rem, 1vw, 1rem) 
+        clamp(0.5rem, 1vw, 1rem) 
+        clamp(0.5rem, 1vw, 1rem) 
+        clamp(0.5rem, 1vw, 1rem);
+    --margin-section: clamp(4rem, 15vw, 20rem);
+
+    /* 
+        * 
+        * BORDER RADIUS
+        *
+    */
+    --border-radius-general: clamp(1rem, 1vw, 2rem);
+    /* 
+        * 
+        * FONT SIZES
+        *
+    */
+    --font-size-h1: clamp(2rem, 5vw, 10rem);
+    --font-size-h2: clamp(1rem, 2vw, 5rem);
+    --font-size-h3: var(--font-size-h1);
+    --font-size-h4: clamp(1.2rem, 3.1vw, 6rem);
+    --font-size-h5: clamp(1.2rem, 2.8vw, 5rem);
+    --font-size-p: clamp(1rem, 1.3vw, 1.5rem);
+    --font-size-caption: clamp(0.8rem, 1vw, 1rem);
+    --font-size-nav: clamp(1rem, 1.5vw, 5rem);
+    --font-size-fact-svg: clamp(1rem, 2vw, 4rem);
+    /* 
+        * 
+        * FONT WEIGHT
+        *
+    */
+    --font-weight-h1: 600;
+    --font-weight-h2: 400;
+    --font-weight-h4: 400;
+    /* 
+        * 
+        * FONT FAMILY
+        *
+    */
+    --font-family-readex: "Readex Pro", san-serif; 
+    --font-family-mulish: "Mulish", san-serif;
+}
