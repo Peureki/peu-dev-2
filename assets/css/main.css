@@ -13,6 +13,7 @@
     box-sizing: border-box;
 }
 html {
+    margin: 0;
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
     overflow-x: hidden;
@@ -21,6 +22,7 @@ body {
     margin: 0;
     position: relative;
     background-color: var(--color-bkg);
+    overflow-x: hidden;
 }
 button, p, h1, h2, h3, h4, h5, h6, ul, li{
     margin: 0;
@@ -73,7 +75,7 @@ ul, li {
 a, button{
     border: none;
     padding: var(--padding-button);
-    border-radius: 20px;
+    border-radius: var(--border-radius-general);
 }
 /*
  * <a> that aren't just buttons 
@@ -103,6 +105,8 @@ section.grid{
     row-gap: var(--gap-row);
 }
 
+
+
 img.logo{
     width: var(--w-logo);
 }
@@ -112,6 +116,14 @@ img.portrait{
 }
 pre {
     color: var(--color-text);
+}
+@media (max-width: 768px){
+    section.grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    img.portrait{
+        width: 100%;
+    }
 }
 /* 
  * For p tags that use the logo to use the logo font
@@ -261,6 +273,25 @@ svg.line{
 .overflow-hidden{
     overflow: hidden;
 }
+.underline{
+    text-decoration: underline;
+    text-decoration-color: var(--color-link);
+    text-decoration-thickness: var(--text-decoration-thickness);
+}
+/*
+    *
+    * TRANSITIONS
+    *
+*/
+.fade-enter-active,s
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
 
 :root{
     /* 
@@ -283,7 +314,8 @@ svg.line{
         *
     */
     --gap-grid: clamp(1rem, 2vw, 2rem);
-    --gap-row: clamp(1.5rem, 3vw, 4rem);
+    --gap-column: clamp(1rem, 2vw, 2rem);
+    --gap-row: clamp(3rem, 3vw, 5rem);
     --gap-button: clamp(0.5rem, 1vw, 1rem);
     --gap-bullet-point: clamp(1rem, 3vw, 3rem);
     --gap-general: clamp(0.5rem, 0.5vw, 1.2rem);
@@ -307,7 +339,7 @@ svg.line{
         * BORDER RADIUS
         *
     */
-    --border-radius-general: clamp(1rem, 1vw, 2rem);
+    --border-radius-general: clamp(0.8rem, 1vw, 2rem);
     /* 
         * 
         * BORDERS
@@ -316,13 +348,19 @@ svg.line{
     --border-white: 1px solid var(--color-text);
     /* 
         * 
+        * MISC
+        *
+    */
+    --text-decoration-thickness: clamp(0.1rem, 0.5vw, 0.3125rem);
+    /* 
+        * 
         * FONT SIZES
         *
     */
-    --font-size-h1: clamp(2rem, 5vw, 10rem);
+    --font-size-h1: clamp(2.5rem, 5vw, 10rem);
     --font-size-h2: clamp(1rem, 2vw, 5rem);
-    --font-size-h3: var(--font-size-h1);
-    --font-size-h4: clamp(1.2rem, 3.1vw, 6rem);
+    --font-size-h3: clamp(3.5rem, 5vw, 10rem);
+    --font-size-h4: clamp(2rem, 3.1vw, 6rem);
     --font-size-h5: clamp(1.2rem, 2.8vw, 5rem);
     --font-size-p: clamp(1rem, 1.3vw, 1.5rem);
     --font-size-caption: clamp(0.8rem, 1vw, 1rem);

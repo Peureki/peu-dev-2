@@ -57,6 +57,7 @@ export const createBalls = (x, y, r, array, texture = null) => {
 export const Plank = (x, y, w, h, angle = 0, fill = '#ececec') => {
     return Matter.Bodies.rectangle(x, y, w, h, {
         isStatic: true,
+        restitution: 0.9,
         angle: Math.PI * angle,
         render: {
             fillStyle: fill,
@@ -86,19 +87,9 @@ export const positiveOrNegative = () => {
     }
     return 1; 
 }
-
-// export const SVGBody = (svgPath, x, y, options = {}) => {
-//     console.log(svgPath);
-//     const verticies = Matter.Svg.pathToVertices(svgPath, 30);
-
-//     const body = Matter.Bodies.fromVertices(x, y, verticies, {
-//         ...options,
-//         render: {
-
-//         }
-//     })
-
-//     return body; 
-
-    
-// }
+// Return random range
+// Use this for: 
+// Random X position for summoning balls
+export const randomRange = (min, max) => {
+    return Math.random() * (max - min) + min; 
+}

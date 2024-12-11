@@ -17,15 +17,13 @@
                 </div>
             </div>
             <div class="overflow-hidden">
-                <div class="overflow-text">
+                <div class="overflow-text underline">
                     small businesses.
                 </div>
             </div>
         </h1>
 
-        <svg class="line" width="885" height="31" viewBox="0 0 885 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M882.574 29.3395C781.348 20.2118 680.325 12.4367 578.803 7.72187C447.226 1.6112 315.775 1.57033 184.063 2.34871C138.616 2.61728 93.181 3.47332 47.7344 3.47332C32.1943 3.47332 17.3269 3.4519 2 5.72255" stroke="#FFFF11" stroke-width="3" stroke-linecap="round"/>
-        </svg>
+        
 
         <Avalanche class="avalanche" id="avalanche"/>
         
@@ -96,14 +94,16 @@
         *
     -->
     <section class="development grid">
-        <Pinball id="pinball"/>
-
+        <Transition name="fade">
+            <Pinball v-if="pinball" id="pinball"/>
+        </Transition>
+    
         <h3 class="overflow-hidden">
             <div class="overflow-h3 pink">development</div>
         </h3>
 
         <div class="project-caption">
-            <p>the mumbo jumbo, the "magic"</p>
+            <p>"the magic" can create anything!</p>
         </div>
 
         <h4 class="sub-header">the magic behind the curtain</h4>
@@ -133,7 +133,10 @@
         *
     -->
     <section class="maintenance grid">
-        <Building v-if="maintenanceBuilding" id="building"/>
+        <Transition name="fade">
+            <Building v-if="buildling" id="building"/>
+        </Transition>
+        
 
         <h3 class="overflow-hidden">
             <div class="overflow-h3 blue">maintenance</div>
@@ -154,24 +157,10 @@
     </section>
     <!--
         *
-        * 'WHOLE.PROCESS' SECTION
+        * 'AND MORE' SECTION
+        * Explaining more smaller services
         *
     -->
-    <!-- <section class="whole-process grid">
-        <Dominoes id="dominoes-1"/>
-
-        <h3 class="header-logo">
-            <div class="overflow-hidden">
-                <div class="overflow-content green">whole</div>
-            </div>
-            <div class="overflow-hidden">
-                <div class="overflow-content pink">.</div>
-            </div>
-            <div class="overflow-hidden">
-                <div class="overflow-content blue">process</div>
-            </div>
-        </h3>
-    </section> -->
     <section class="and-more">
         <h3 class="header-logo">
             <div class="overflow-hidden">
@@ -288,18 +277,18 @@
 
     
 
-    <footer class="grid">
+    <footer class="footer grid">
         <!-- <LowGravity id="low-gravity"/> -->
 
         <section class="closing grid">
             <h3 class="main-header">
                 <div class="overflow-hidden">
-                    <div class="overflow-text">
+                    <div class="overflow-text-h3">
                         have a vision of your website?
                     </div>
                 </div>
             </h3>
-            <h4 class="sub-header">let's connect! it's as easy as sending an email: <a class="email-header" href="mailto:matt@peu.dev">matt@peu.dev</a></h4>
+            <h4 class="sub-header">let's connect! it's as easy as sending an email: <a class="email-header underline" href="mailto:matt@peu.dev">matt@peu.dev</a></h4>
         </section>
 
         <div class="end-credits">
@@ -339,13 +328,15 @@ import PeuMockup1 from '~/assets/imgs/peu-research-center/mockup-1.webp'
 
 import Lenis from 'lenis';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import Pinball from '~/components/Pinball.vue'
 
 
 const { $gsap } = useNuxtApp();
 $gsap.registerPlugin(ScrollTrigger);
 
-const maintenanceBuilding = ref(false),
-    dominoesToggle = ref(false); 
+const buildling = ref(false),
+    dominoesToggle = ref(false),
+    pinball = ref(false); 
 
 onMounted(() => {
     const lenis = new Lenis()
@@ -361,6 +352,9 @@ onMounted(() => {
 
     requestAnimationFrame(raf)
 
+    // * 
+    // * Initialize TIMELINES 
+    // *
     const heroTL = $gsap.timeline(),
         designTL = $gsap.timeline({
             scrollTrigger: {
@@ -385,6 +379,18 @@ onMounted(() => {
                 trigger: '.and-more',
                 start: 'top 90%'
             }
+        }),
+        projectsTL = $gsap.timeline({
+            scrollTrigger: {
+                trigger: '.projects',
+                start: 'top 90%'
+            }
+        }),
+        footerTL = $gsap.timeline({
+            scrollTrigger: {
+                trigger: '.footer',
+                start: 'top 90%'
+            }
         });
 
     const path = document.querySelector('.development #hand-drawn-arrow path');
@@ -396,25 +402,25 @@ onMounted(() => {
     heroTL
         // MAIN HEADER TEXT
         .from('.header-grid .overflow-text', {
-            duration: 0.5,
+            duration: 0.4,
             yPercent: 100,
             stagger: 0.2,
         })
         // peu.dev 
         .from('.header-grid .overflow-content', {
-            duration: 0.5,
+            duration: 0.4,
             yPercent: 100,
             delay: -0.2,
         })
         // CTA BUTTON
         .from('.header-grid .cta', {
-            duration: 0.5,
+            duration: 0.4,
             yPercent: 100,
             opacity: 0, 
         }, '<')
         // AVALANACHE
         .from('.header-grid .avalanche', {
-            duration: 0.5,
+            duration: 0.4,
             yPercent: 2,
             opacity: 0,
         }, '<')
@@ -423,32 +429,32 @@ onMounted(() => {
     // *
     designTL
         .from('.design .overflow-h3', {
-            duration: 0.5,
+            duration: 0.4,
             yPercent: 100,
             stagger: 0.2,
         })
         .from('.design #sub1', {
-            duration: 0.5, 
+            duration: 0.4, 
             yPercent: 10,
             opacity: 0,
         })
         .from('.design #sub2', {
-            duration: 0.5, 
+            duration: 0.4, 
             yPercent: 10,
             opacity: 0,
         }, '<')
         .from('.design .project-caption', {
-            duration: 0.5, 
+            duration: 0.4, 
             yPercent: 10,
             opacity: 0,
         }, '<')
         .from('.design #description', {
-            duration: 0.5, 
+            duration: 0.4, 
             yPercent: 10,
             opacity: 0,
         }, '<')
         .from('.design .cta', {
-            duration: 0.5, 
+            duration: 0.4, 
             yPercent: 20,
             opacity: 0,
         }, '<')
@@ -457,27 +463,28 @@ onMounted(() => {
     // *
     developmentTL
         .from('.development .overflow-h3', {
-            duration: 0.5,
+            duration: 0.4,
             yPercent: 100,
             stagger: 0.2,
         })
         .from('.development .project-caption', {
-            duration: 0.5, 
+            duration: 0.4, 
             yPercent: 20,
             opacity: 0,
         }, '<')
+        .call(() => { pinball.value = true })
         .from('.development .sub-header', {
-            duration: 0.5, 
+            duration: 0.4, 
             yPercent: 10,
             opacity: 0,
         })
         .from('.development #description', {
-            duration: 0.5, 
+            duration: 0.4, 
             yPercent: 10,
             opacity: 0,
         }, '<')
         .from('.development .cta', {
-            duration: 0.5, 
+            duration: 0.4, 
             yPercent: 10,
             opacity: 0,
         }, '<')
@@ -491,23 +498,23 @@ onMounted(() => {
     // *
     maintenanceTL
         .from('.maintenance .overflow-h3', {
-            duration: 0.5,
+            duration: 0.4,
             yPercent: 100,
             stagger: 0.2,
         })
+        .call(() => { buildling.value = true })
         .from('.maintenance .sub-header', {
-            duration: 0.5, 
+            duration: 0.4, 
             yPercent: 10,
             opacity: 0,
-        })
-        .call(() => { maintenanceBuilding.value = true })
+        }, '<')
         .from('.maintenance #description', {
-            duration: 0.5, 
+            duration: 0.4, 
             yPercent: 10,
             opacity: 0,
         }, '<')
         .from('.maintenance .cta', {
-            duration: 0.5, 
+            duration: 0.4, 
             yPercent: 10,
             opacity: 0,
         }, '<')
@@ -517,7 +524,7 @@ onMounted(() => {
     andMoreTL
         .call(() => { dominoesToggle.value = true })
         .from('.and-more .overflow-h3', {
-            duration: 0.5,
+            duration: 0.4,
             yPercent: 100,
         })
         .from('.and-more .overflow-h4', {
@@ -530,6 +537,64 @@ onMounted(() => {
             yPercent: 10,
             opacity: 0,
         }, '<')
+    // *
+    // * FEATURED PROJECTS SECTION ANIMATION
+    // *
+    projectsTL 
+        .from('.projects .overflow-h3', {
+            duration: 0.4, 
+            yPercent: 100,
+        })
+        .from('.projects .project-logo', {
+            duration: 0.4,
+            yPercent: 10,
+            opacity: 0,
+        })
+        .from('.projects > h4', {
+            duration: 0.4,
+            yPercent: 10,
+            opacity: 0,
+        }, '<')
+        .from('.projects .mockup', {
+            duration: 0.4,
+            yPercent: 10,
+            opacity: 0,
+        }, '<')
+        .from('.projects .attributes', {
+            duration: 0.4,
+            yPercent: 10,
+            opacity: 0,
+        }, '<')
+        .from('.projects .cta-container', {
+            duration: 0.4,
+            yPercent: 10,
+            opacity: 0,
+        }, '<')
+        .from('.projects .fact-container', {
+            duration: 0.4,
+            yPercent: 10,
+            opacity: 0,
+        }, '<')
+    // *
+    // * FOOTER SECTION ANIMATION
+    // *
+    footerTL
+        .from('.footer .overflow-text-h3', {
+            duration: 0.4, 
+            yPercent: 100,
+        })
+        .from('.footer .sub-header', {
+            duration: 0.4,
+            yPercent: 10,
+            opacity: 0,
+        })
+        .from('.footer .end-credits', {
+            duration: 0.4,
+            yPercent: 10,
+            opacity: 0,
+        }, '<')
+        
+
 })
 
 </script>
@@ -539,30 +604,48 @@ onMounted(() => {
     display: grid;
     height: 100dvh;
     align-items: center;
-    gap: var(--gap-grid);
-    grid-template-columns: 1fr 3fr 2fr;
-    grid-template-rows: 10fr 1fr;
-    grid-template-areas: 
-        'header header avalanche'
-        'logo cta avalanche'
-    ;
 }
-.main-header{
-    grid-area: header;
+section.header-grid .main-header{
+    align-self: flex-end;
+    grid-area: 1 / 1 / 1 / 10; 
 }
-#avalanche{
-    grid-area: avalanche;
+section.header-grid .avalanche{
+    width: 30vw;
+    grid-area: 1 / 10 / 3 / 13;
 }
-.cta{
-    grid-area: cta;
+section.header-grid .header-logo{
+    grid-area: 2 / 1 / 2 / 5;
+}
+section.header-grid .cta{
     justify-self: flex-end;
+    grid-area: 2 / 5 / 2 / 10;
 }
-section.header-grid svg.line{
-    top: 70%;
-    left: 0;
-    grid-area: header;
+@media (max-width: 790px){
+    section.header-grid{
+        height: unset;
+    }
+    section.header-grid .main-header{
+        /* padding-top: calc(var(--margin-section) * 2); */
+        padding-top: calc(var(--margin-section) * 2);
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        grid-area: 1 / 1 / 1 / 5; 
+    }
+    section.header-grid .avalanche{
+        height: 70dvh;
+        width: unset;
+        grid-area: 3 / 1 / 3 / 5;
+    }
+    section.header-grid .header-logo{
+        display: none;
+        grid-area: 3 / 1 / 3 / 5; 
+    }
+    section.header-grid .cta{
+        justify-self: center;
+        grid-area: 2 / 1 / 2 / 5;
+    }
 }
-
 
 
 .about{
@@ -620,7 +703,36 @@ section.design #description{
 }
 section.design .cta{
     justify-self: center;
-    grid-area: 6 / 6 / 7 / 8;
+    grid-area: 6 / 4 / 7 / 10;
+}
+@media (max-width: 768px){
+    section.design > h3{
+        grid-area: 1 / 1 / 1 / 5;
+    }   
+    section.design #sub1{
+        grid-area: 2 / 1 / 2 / 5;
+    }
+    section.design #project-1{
+        grid-area: 3 / 1 / 3 / 5;
+    }
+    section.design #flower{
+        grid-area: 4 / 1 / 4 / 2;
+    }
+    section.design #sub2{
+        align-self: flex-start;
+        grid-area: 5 / 1 / 5 / 5; 
+    }
+    section.design #description{
+        grid-area: 6 / 1 / 6 / 5; 
+    }
+    section.design .cta{
+        justify-self: flex-start;
+        grid-area: 7 / 1 / 7 / 5; 
+    }
+    section.design .project-caption{
+        justify-self: flex-end;
+        grid-area: 4 / 2 / 4 / 5; 
+    }
 }
 /*
     *
@@ -714,17 +826,27 @@ section.and-more{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: var(--gap-grid);
+    column-gap: var(--gap-column);
+    row-gap: var(--gap-row);
     padding: var(--padding-inline-page);
     width: clamp(18.75rem, 30vw, 50rem);
 }
 .description-container{
     display: flex;
-    gap: var(--gap-grid);
+    column-gap: var(--gap-column);
+    row-gap: var(--gap-row);
     flex-direction: column;
 }
 .dominoes-container{
     height: 20dvh;
+}
+@media (max-width: 670px){
+    .and-more-container{
+        justify-content: center;
+    }
+    .service{
+        width: 100%;
+    }
 }
 /*
     *
@@ -795,6 +917,17 @@ footer .end-credits{
     grid-area: 3 / 1 / 3 / 13;
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width: 768px){
+    section.desgin,
+    section.development,
+    section.maintenance,
+    section.and-more,
+    section.projects,
+    footer{
+        display: none;
+    }
 }
 
 </style>

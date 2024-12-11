@@ -10,6 +10,7 @@ import Logo from '~/assets/svgs/logo.svg'
 let Engine = Matter.Engine,
     Render = Matter.Render,
     Runner = Matter.Runner,
+    Body = Matter.Body,
     Bodies = Matter.Bodies,
     Composite = Matter.Composite;
 
@@ -38,9 +39,20 @@ onMounted(() => {
     //     Ball(50, 0, 20)
     // ]
 
-    const spinPlanks = [
-        SpinPlank(200, 300, mWidth / 2, mWidth / 75, 0.03 * positiveOrNegative()),
+    const planks = [
+        Plank(0, mHeight/2, mWidth/75, mHeight),
+        Plank(mWidth, mHeight/2, mWidth/75, mHeight),
     ]
+
+    const spinPlanks = [
+        SpinPlank(mWidth/2, mHeight/2, mWidth * 2, mWidth/50, 0 * positiveOrNegative()),
+    ]
+
+    console.log(spinPlanks[0].angle);
+
+    
+
+    
 
     // create an engine
     let engine = Engine.create();
@@ -61,10 +73,17 @@ onMounted(() => {
     });
 
     // add all of the bodies to the world
-    Composite.add(engine.world, [ ...spinPlanks]);
+    Composite.add(engine.world, [ ...spinPlanks, ...planks]);
 
+    let angle = 0;
+    // Start spinning the spinPlank
     setInterval(() => {
-        Composite.add(engine.world, createBalls(50, -50, 20, balls));
+        Body.setAngle(spinPlanks[0], angle += 0.005)
+    }, 30)
+
+    // Create balls at a random X range, above the viewable Y range
+    setInterval(() => {
+        Composite.add(engine.world, createBalls(randomRange(mWidth, 0), -50, 20, balls));
     }, 1000)
 
     // Monitor and remove offscreen bodies
