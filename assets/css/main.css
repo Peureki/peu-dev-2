@@ -57,6 +57,7 @@ h5{
 
 a, button{
     cursor: pointer;
+    text-decoration: none;
 }
 p, a, button, li {
     font-size: var(--font-size-p);
@@ -69,10 +70,26 @@ ul, li {
     padding: 0;
     list-style: none;
 }
-button{
+a, button{
     border: none;
     padding: var(--padding-button);
     border-radius: 20px;
+}
+/*
+ * <a> that aren't just buttons 
+ *
+ * footer email header
+ */
+a.email-header{
+    font-size: var(--font-size-h4);
+    font-family: var(--font-family-readex);
+    font-weight: var(--font-weight-h4);   
+}
+/*
+ * <a> that act like <p>
+ */
+a.p-link, a.svg-link{
+    padding: unset;
 }
 section {
     padding-inline: var(--padding-inline-page);
@@ -82,7 +99,8 @@ section.grid{
     position: relative;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: var(--gap-grid);
+    column-gap: var(--gap-grid);
+    row-gap: var(--gap-row);
 }
 
 img.logo{
@@ -90,10 +108,16 @@ img.logo{
 }
 img.portrait{
     border-radius: var(--border-radius-general);
-    width: 100%;
+    width: clamp(30rem, 45vw, 60rem);
 }
 pre {
     color: var(--color-text);
+}
+/* 
+ * For p tags that use the logo to use the logo font
+ */
+.logo-font{
+    font-family: var(--font-family-readex);
 }
 
 /*
@@ -110,16 +134,30 @@ pre {
     width: fit-content;
     height: fit-content;
 }
+.cta.secondary{
+    background-color: unset;
+    border: var(--border-white);
+    color: var(--color-text);
+}
+
 .cta p{
     color: var(--color-bkg);
     font-size: var(--font-size-p);
 }
-.cta svg{
+.cta svg,
+.cta.secondary svg{
     width: var(--font-size-p);
     height: var(--font-size-p);
 }
 .cta svg path{
     fill: var(--color-bkg);
+}
+.cta.secondary p{
+    color: var(--color-text);
+    font-size: var(--font-size-p);
+}
+.cta.secondary svg path{
+    fill: var(--color-text);
 }
 
 /*
@@ -156,18 +194,14 @@ pre {
 .project-logo{
     width: 100%;
 }
-.mockup{
-    width: 100%;
-    height: 100%;
-    border-radius: var(--border-radius-general);
-}
+
 .attributes{
     display: flex;
     flex-wrap: wrap;
     gap: var(--gap-button);
 }
 .attributes > li {
-    border: 1px solid white;
+    border: var(--border-white);
     border-radius: var(--border-radius-general);
     padding: var(--padding-button); 
     text-align: center;
@@ -189,6 +223,18 @@ pre {
     height: var(--font-size-fact-svg);
     transform: rotate(-90deg);
 }
+/*
+    *
+    * CUSTOM SVGs
+    *
+*/
+.circle-container{
+    position: relative;
+}
+svg.line{
+    position: absolute;
+}
+
 /*
     *
     * DYNAMIC CLASSES
@@ -237,6 +283,7 @@ pre {
         *
     */
     --gap-grid: clamp(1rem, 2vw, 2rem);
+    --gap-row: clamp(1.5rem, 3vw, 4rem);
     --gap-button: clamp(0.5rem, 1vw, 1rem);
     --gap-bullet-point: clamp(1rem, 3vw, 3rem);
     --gap-general: clamp(0.5rem, 0.5vw, 1.2rem);
@@ -253,6 +300,7 @@ pre {
         clamp(0.5rem, 1vw, 1rem) 
         clamp(0.5rem, 1vw, 1rem);
     --margin-section: clamp(4rem, 15vw, 20rem);
+    --margin-footer: clamp(1rem, 2vw, 6rem);
 
     /* 
         * 
@@ -260,6 +308,12 @@ pre {
         *
     */
     --border-radius-general: clamp(1rem, 1vw, 2rem);
+    /* 
+        * 
+        * BORDERS
+        *
+    */
+    --border-white: 1px solid var(--color-text);
     /* 
         * 
         * FONT SIZES

@@ -2,10 +2,9 @@
     <header>
         <nav>
             <NuxtLink to="/"><img class="logo" :src="Logo" alt="Logo" title="Logo" > </NuxtLink>
-            <NuxtLink to="/about">about</NuxtLink>
+            <NuxtLink to="/about">services</NuxtLink>
             <NuxtLink>projects</NuxtLink>
-            <NuxtLink>services</NuxtLink>
-            <NuxtLink>let's chat</NuxtLink>
+            <NuxtLink>let's connect</NuxtLink>
         </nav>
     </header>
     

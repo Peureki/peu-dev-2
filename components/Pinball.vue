@@ -1,10 +1,10 @@
 <template>
-    <div class="matter-container"></div>
+    <div class="pinball"></div>
 </template>
 
 <script setup>
 import Matter from 'matter-js'
-import Design from '~/assets/svgs/design.svg'
+import Logo from '~/assets/svgs/logo.svg'
 
 // module aliases
 let Engine = Matter.Engine,
@@ -13,21 +13,11 @@ let Engine = Matter.Engine,
     Bodies = Matter.Bodies,
     Composite = Matter.Composite;
 
-
-
 const balls = [];
-
-// const createBalls = () => {
-//     const newBall = Ball(50, -50, 20);
-//     balls.push(newBall);
-//     return newBall; 
-// }
-
-
 
 onMounted(() => {
     // Needs to be inside onMounted because DOM has not been made yet 
-    const matterContainer = document.querySelector('.matter-container');
+    const matterContainer = document.querySelector('.pinball');
 
     // * 
     // * MATTER CONTAINER WIDTH, HEIGHT
@@ -35,13 +25,21 @@ onMounted(() => {
     const mWidth = matterContainer.clientWidth,
         mHeight = matterContainer.clientHeight;
 
-    // Construct levels of planks
-    const planks = [
-        Plank(0, (mHeight/5), mWidth, 10, 0.07),
-        Plank(mWidth, (mHeight/3), mWidth, 10, -0.07),
-        Plank(0, (mHeight/2), mWidth, 10, 0.07),
-        Plank(mWidth, (mHeight/1.5), mWidth, 10, -0.07),
-        Plank(0, (mHeight/1.25), mWidth, 10, 0.07),
+    // const plank = [
+    //     Plank(mWidth/2, mHeight, mWidth, 2),
+    // ]
+
+    const rectangles = [
+        // FIRST TWO COLUMNS
+        Rectangle(200, 0, 100, 100),
+    ]
+
+    // const balls = [
+    //     Ball(50, 0, 20)
+    // ]
+
+    const spinPlanks = [
+        SpinPlank(200, 300, mWidth / 2, mWidth / 75, 0.03 * positiveOrNegative()),
     ]
 
     // create an engine
@@ -63,8 +61,8 @@ onMounted(() => {
     });
 
     // add all of the bodies to the world
-    Composite.add(engine.world, [...planks]);
-    
+    Composite.add(engine.world, [ ...spinPlanks]);
+
     setInterval(() => {
         Composite.add(engine.world, createBalls(50, -50, 20, balls));
     }, 1000)
@@ -83,7 +81,6 @@ onMounted(() => {
         });
     });
     
-
     // run the renderer
     Render.run(render);
 
@@ -96,7 +93,7 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.matter-container{
+.pinball{
     width: 100%;
     height: 100%;
 }

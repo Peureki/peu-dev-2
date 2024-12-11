@@ -25,6 +25,9 @@ export const Rectangle = (x, y, w, h, texture = null) => {
         }
     })
 }
+
+
+
 export const Domino = (x, y, w, h, angle = 0) => {
     return Matter.Bodies.rectangle(x, y, w, h, {
         friction: 0.4, 
@@ -59,6 +62,29 @@ export const Plank = (x, y, w, h, angle = 0, fill = '#ececec') => {
             fillStyle: fill,
         }
     }); 
+}
+
+export const SpinPlank = (x, y, w, h, angle = 0) => {
+    return Matter.Bodies.rectangle(x, y, w, h, {
+        isStatic: true,
+        angle: Math.PI * angle,
+        render: {
+            fillStyle: '#ececec',
+        }
+    })
+}
+
+// * 
+// * Randomly get a positive or negative result
+// * Use this return as a way to make something do the opposite (like spin backwards or forward)
+// *
+export const positiveOrNegative = () => {
+    const randomNumber = Math.random(); 
+
+    if (randomNumber < 0.5){
+        return -1;
+    }
+    return 1; 
 }
 
 // export const SVGBody = (svgPath, x, y, options = {}) => {

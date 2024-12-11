@@ -23,6 +23,10 @@
             </div>
         </h1>
 
+        <svg class="line" width="885" height="31" viewBox="0 0 885 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M882.574 29.3395C781.348 20.2118 680.325 12.4367 578.803 7.72187C447.226 1.6112 315.775 1.57033 184.063 2.34871C138.616 2.61728 93.181 3.47332 47.7344 3.47332C32.1943 3.47332 17.3269 3.4519 2 5.72255" stroke="#FFFF11" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+
         <Avalanche class="avalanche" id="avalanche"/>
         
         <h2 class="header-logo">
@@ -59,7 +63,7 @@
 
         <h4 id="sub1">it’s more than making pages look cool</h4>
 
-        <h4 id="sub2">it’s also about functionality and intention</h4>
+        <h4 id="sub2">it’s also about accessibility and intention</h4>
 
 
         <!--
@@ -74,7 +78,7 @@
         </p>
 
         <button class="cta">
-            <p>heck yeah</p>
+            <p>i need designs</p>
             <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.195 10.83L12 6.00001L7.195 1.17001C7.1516 1.11302 7.09647 1.06603 7.03333 1.0322C6.9702 0.998373 6.90053 0.978506 6.82904 0.973946C6.75756 0.969385 6.68593 0.980236 6.61901 1.00576C6.55208 1.03129 6.49142 1.0709 6.44114 1.12191C6.39085 1.17292 6.35211 1.23414 6.32754 1.30142C6.30297 1.36871 6.29315 1.44048 6.29873 1.51189C6.30431 1.5833 6.32517 1.65268 6.35989 1.71533C6.39462 1.77798 6.4424 1.83243 6.5 1.87501L10.095 5.50001L0.53 5.50001C0.397391 5.50001 0.270215 5.55269 0.176447 5.64646C0.0826787 5.74022 0.0299997 5.8674 0.0299997 6.00001C0.0299997 6.13262 0.0826787 6.2598 0.176447 6.35356C0.270215 6.44733 0.397391 6.50001 0.53 6.50001L10.095 6.50001L6.5 10.125C6.40651 10.2192 6.35425 10.3466 6.35472 10.4793C6.35519 10.612 6.40835 10.739 6.5025 10.8325C6.59665 10.926 6.72409 10.9783 6.85677 10.9778C6.98945 10.9773 7.11651 10.9242 7.21 10.83H7.195Z"/>
                 <title>Discover services</title>
@@ -92,12 +96,14 @@
         *
     -->
     <section class="development grid">
+        <Pinball id="pinball"/>
+
         <h3 class="overflow-hidden">
             <div class="overflow-h3 pink">development</div>
         </h3>
 
         <div class="project-caption">
-            <p>actual code from featured project, Shogun!</p>
+            <p>the mumbo jumbo, the "magic"</p>
         </div>
 
         <h4 class="sub-header">the magic behind the curtain</h4>
@@ -118,7 +124,7 @@
             <path d="M28.6814 2C28.8631 14.5226 30.059 26.9599 29.9977 39.5125C29.8433 71.1446 24.5291 102.866 15.024 132.664C12.5221 140.507 9.7419 148.443 5.71799 155.505C5.46182 155.954 1.82733 162.446 2.42706 159.325C3.82984 152.025 3.6703 144.58 3.6703 137.155C3.6703 136.773 3.6703 133.599 3.6703 133.964C3.6703 136.645 3.71759 139.332 3.63373 142.011C3.42636 148.638 2.02483 155.127 2.02483 161.763C2.02483 162.502 1.8034 163.431 2.68302 162.779C5.64835 160.582 8.31834 157.86 10.8738 155.118C12.9085 152.936 15.1742 150.938 16.9437 148.473C17.7501 147.35 18.4539 146.285 19.4668 145.385" stroke="var(--color-text)" stroke-width="3" stroke-linecap="round"/>
         </svg>
 
-        <img class="portrait" id="code" :src="ShogunCode" alt="Code snippet from Shogun Steakhouse Naperville's website" title="Code snippet from Shogun Steakhouse Naperville's website">
+        <!-- <img class="portrait" id="code" :src="ShogunCode" alt="Code snippet from Shogun Steakhouse Naperville's website" title="Code snippet from Shogun Steakhouse Naperville's website"> -->
     </section>
 
     <!--
@@ -181,24 +187,55 @@
 
         <div class="and-more-container">
             <div class="service">
-                <h4 class="overflow-hidden">
-                    <div class="overflow-h4">hosting</div>
-                </h4>
-                <p class="description">Like what we said in maintenance, a website is going to need a space to call home. We can provide an affordable and comfortable place so you never have to worry about the technical details. Your website will live 100% of the time. If something does happen, we'll have backups prepared!</p>
+                <div class="description-container">
+                    <h4 class="overflow-hidden">
+                        <div class="overflow-h4">hosting</div>
+                    </h4>
+                    <p class="description">Like what we said in maintenance, a website is going to need a space to call home. We can provide an affordable and comfortable place so you never have to worry about the technical details. Your website will live 100% of the time. If something does happen, we'll have backups prepared!</p>
+                </div>
+                    
+
+                <button class="cta">
+                    <p>i need hosting</p>
+                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.195 10.83L12 6.00001L7.195 1.17001C7.1516 1.11302 7.09647 1.06603 7.03333 1.0322C6.9702 0.998373 6.90053 0.978506 6.82904 0.973946C6.75756 0.969385 6.68593 0.980236 6.61901 1.00576C6.55208 1.03129 6.49142 1.0709 6.44114 1.12191C6.39085 1.17292 6.35211 1.23414 6.32754 1.30142C6.30297 1.36871 6.29315 1.44048 6.29873 1.51189C6.30431 1.5833 6.32517 1.65268 6.35989 1.71533C6.39462 1.77798 6.4424 1.83243 6.5 1.87501L10.095 5.50001L0.53 5.50001C0.397391 5.50001 0.270215 5.55269 0.176447 5.64646C0.0826787 5.74022 0.0299997 5.8674 0.0299997 6.00001C0.0299997 6.13262 0.0826787 6.2598 0.176447 6.35356C0.270215 6.44733 0.397391 6.50001 0.53 6.50001L10.095 6.50001L6.5 10.125C6.40651 10.2192 6.35425 10.3466 6.35472 10.4793C6.35519 10.612 6.40835 10.739 6.5025 10.8325C6.59665 10.926 6.72409 10.9783 6.85677 10.9778C6.98945 10.9773 7.11651 10.9242 7.21 10.83H7.195Z"/>
+                        <title>Discover services</title>
+                    </svg>
+                </button>
             </div>
 
             <div class="service">
-                <h4 class="overflow-hidden">
-                    <div class="overflow-h4">SEO</div> 
-                </h4>
-                <p class="description">A large chunk of SEO is all about how a website is built. Search engines crawl websites that use the correct semantics, have great performance, and use appropiate meta tags. Because we code 'from scratch' and is first party, we can directly create and input that data to guarantee your website is built with everything needed to have the best chances of getting the top spot in a search. </p>
+                <div class="description-container">
+                    <h4 class="overflow-hidden">
+                        <div class="overflow-h4">onsite SEO</div> 
+                    </h4>
+                    <p class="description">A large chunk of SEO is all about how a website is built. Search engines crawl websites that use the correct semantics, have great performance, and use appropiate meta tags. Because we code 'from scratch' and is first party, we can directly create and input that data to guarantee your website is built with everything needed to have the best chances of getting the top spot in a search. </p>
+                </div>
+                    
+                <button class="cta">
+                    <p>i want organic leads</p>
+                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.195 10.83L12 6.00001L7.195 1.17001C7.1516 1.11302 7.09647 1.06603 7.03333 1.0322C6.9702 0.998373 6.90053 0.978506 6.82904 0.973946C6.75756 0.969385 6.68593 0.980236 6.61901 1.00576C6.55208 1.03129 6.49142 1.0709 6.44114 1.12191C6.39085 1.17292 6.35211 1.23414 6.32754 1.30142C6.30297 1.36871 6.29315 1.44048 6.29873 1.51189C6.30431 1.5833 6.32517 1.65268 6.35989 1.71533C6.39462 1.77798 6.4424 1.83243 6.5 1.87501L10.095 5.50001L0.53 5.50001C0.397391 5.50001 0.270215 5.55269 0.176447 5.64646C0.0826787 5.74022 0.0299997 5.8674 0.0299997 6.00001C0.0299997 6.13262 0.0826787 6.2598 0.176447 6.35356C0.270215 6.44733 0.397391 6.50001 0.53 6.50001L10.095 6.50001L6.5 10.125C6.40651 10.2192 6.35425 10.3466 6.35472 10.4793C6.35519 10.612 6.40835 10.739 6.5025 10.8325C6.59665 10.926 6.72409 10.9783 6.85677 10.9778C6.98945 10.9773 7.11651 10.9242 7.21 10.83H7.195Z"/>
+                        <title>Discover services</title>
+                    </svg>
+                </button>
             </div>
 
             <div class="service">
-                <h4 class="overflow-hidden">
-                    <div class="overflow-h4">on-call</div>
-                </h4>
-                <p class="description">We are your pocket developers. Email us, call us, DM us, we are here to help you. Our goal is to always make sure you never have to worry about your website. Sometimes you may need to change something. We got you!</p>
+                <div class="description-container">
+                    <h4 class="overflow-hidden">
+                        <div class="overflow-h4">on-call</div>
+                    </h4>
+                    <p class="description">We are your pocket developers. Email us, call us, DM us, we are here to help you. Our goal is to always make sure you never have to worry about your website. Sometimes you may need to change something. We got you!</p>
+                </div>
+            
+                <button class="cta">
+                    <p>i need that</p>
+                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.195 10.83L12 6.00001L7.195 1.17001C7.1516 1.11302 7.09647 1.06603 7.03333 1.0322C6.9702 0.998373 6.90053 0.978506 6.82904 0.973946C6.75756 0.969385 6.68593 0.980236 6.61901 1.00576C6.55208 1.03129 6.49142 1.0709 6.44114 1.12191C6.39085 1.17292 6.35211 1.23414 6.32754 1.30142C6.30297 1.36871 6.29315 1.44048 6.29873 1.51189C6.30431 1.5833 6.32517 1.65268 6.35989 1.71533C6.39462 1.77798 6.4424 1.83243 6.5 1.87501L10.095 5.50001L0.53 5.50001C0.397391 5.50001 0.270215 5.55269 0.176447 5.64646C0.0826787 5.74022 0.0299997 5.8674 0.0299997 6.00001C0.0299997 6.13262 0.0826787 6.2598 0.176447 6.35356C0.270215 6.44733 0.397391 6.50001 0.53 6.50001L10.095 6.50001L6.5 10.125C6.40651 10.2192 6.35425 10.3466 6.35472 10.4793C6.35519 10.612 6.40835 10.739 6.5025 10.8325C6.59665 10.926 6.72409 10.9783 6.85677 10.9778C6.98945 10.9773 7.11651 10.9242 7.21 10.83H7.195Z"/>
+                        <title>Discover services</title>
+                    </svg>
+                </button>
             </div>
         </div>
 
@@ -211,9 +248,10 @@
     <Project
         :header-toggle="true"
         name="Shogun Japanese Steakhouse Naperville"
+        href="https://shogunsteaknaperville.com/"
         :logo="ShogunLogo"
         :mockup="ShogunMockup1"
-        :attributes="['restaurant', 'nuxt.js']"
+        :attributes="['restaurant', 'nuxt.js', 'netlify']"
     >
         <template v-slot:fact>
             <div class="fact-container">
@@ -227,6 +265,59 @@
             </div>
         </template>
     </Project>
+
+    <Project
+        name="Peu Research Center"
+        href="https://peuresearchcenter.com/"
+        :logo="PeuLogo"
+        :mockup="PeuMockup1"
+        :attributes="['web app', 'laravel', 'vue.js', 'mysql', 'digitalocean', 'laravelforge']"
+    >
+        <template v-slot:fact>
+            <div class="fact-container">
+                <h5 class="fact">
+                    1000+
+                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.195 10.83L12 6.00001L7.195 1.17001C7.1516 1.11302 7.09647 1.06603 7.03333 1.0322C6.9702 0.998373 6.90053 0.978506 6.82904 0.973946C6.75756 0.969385 6.68593 0.980236 6.61901 1.00576C6.55208 1.03129 6.49142 1.0709 6.44114 1.12191C6.39085 1.17292 6.35211 1.23414 6.32754 1.30142C6.30297 1.36871 6.29315 1.44048 6.29873 1.51189C6.30431 1.5833 6.32517 1.65268 6.35989 1.71533C6.39462 1.77798 6.4424 1.83243 6.5 1.87501L10.095 5.50001L0.53 5.50001C0.397391 5.50001 0.270215 5.55269 0.176447 5.64646C0.0826787 5.74022 0.0299997 5.8674 0.0299997 6.00001C0.0299997 6.13262 0.0826787 6.2598 0.176447 6.35356C0.270215 6.44733 0.397391 6.50001 0.53 6.50001L10.095 6.50001L6.5 10.125C6.40651 10.2192 6.35425 10.3466 6.35472 10.4793C6.35519 10.612 6.40835 10.739 6.5025 10.8325C6.59665 10.926 6.72409 10.9783 6.85677 10.9778C6.98945 10.9773 7.11651 10.9242 7.21 10.83H7.195Z" fill="var(--color-text)"/>
+                    </svg>
+                </h5>
+                <p>Monthly unique page visits</p>
+            </div>
+        </template>
+    </Project>
+
+    
+
+    <footer class="grid">
+        <!-- <LowGravity id="low-gravity"/> -->
+
+        <section class="closing grid">
+            <h3 class="main-header">
+                <div class="overflow-hidden">
+                    <div class="overflow-text">
+                        have a vision of your website?
+                    </div>
+                </div>
+            </h3>
+            <h4 class="sub-header">let's connect! it's as easy as sending an email: <a class="email-header" href="mailto:matt@peu.dev">matt@peu.dev</a></h4>
+        </section>
+
+        <div class="end-credits">
+            <a class="p-link" href="tel:331-256-7731">331-256-7731</a>
+            <a class="p-link logo-font" href="mailto:matt@peu.dev">
+                <span class="green">peu</span>
+                <span class="pink">.</span>
+                <span class="blue">dev</span>
+            </a>
+            <div class="socials">
+                <a class="svg-link" href="https://www.linkedin.com/in/mattnewyen/" target="_blank">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 0C16.5304 0 17.0391 0.210714 17.4142 0.585786C17.7893 0.960859 18 1.46957 18 2V16C18 16.5304 17.7893 17.0391 17.4142 17.4142C17.0391 17.7893 16.5304 18 16 18H2C1.46957 18 0.960859 17.7893 0.585786 17.4142C0.210714 17.0391 0 16.5304 0 16V2C0 1.46957 0.210714 0.960859 0.585786 0.585786C0.960859 0.210714 1.46957 0 2 0H16ZM15.5 15.5V10.2C15.5 9.33539 15.1565 8.5062 14.5452 7.89483C13.9338 7.28346 13.1046 6.94 12.24 6.94C11.39 6.94 10.4 7.46 9.92 8.24V7.13H7.13V15.5H9.92V10.57C9.92 9.8 10.54 9.17 11.31 9.17C11.6813 9.17 12.0374 9.3175 12.2999 9.58005C12.5625 9.8426 12.71 10.1987 12.71 10.57V15.5H15.5ZM3.88 5.56C4.32556 5.56 4.75288 5.383 5.06794 5.06794C5.383 4.75288 5.56 4.32556 5.56 3.88C5.56 2.95 4.81 2.19 3.88 2.19C3.43178 2.19 3.00193 2.36805 2.68499 2.68499C2.36805 3.00193 2.19 3.43178 2.19 3.88C2.19 4.81 2.95 5.56 3.88 5.56ZM5.27 15.5V7.13H2.5V15.5H5.27Z" fill="var(--color-text)"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
 </template>
 
 <script setup>
@@ -236,8 +327,15 @@ import ShogunCode from '~/assets/imgs/shogun/code.webp'
 
 // *
 // * PROJECT IMAGES
+// *
+// PROJECT: SHOGUN 
 import ShogunLogo from '~/assets/imgs/shogun/logo.svg'
 import ShogunMockup1 from '~/assets/imgs/shogun/mockup-1.jpg'
+
+// PROJECT: PEU RESEARCH CENTER
+import PeuLogo from '~/assets/imgs/peu-research-center/Peu_Choya.png'
+import PeuMockup1 from '~/assets/imgs/peu-research-center/mockup-1.webp'
+
 
 import Lenis from 'lenis';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -448,7 +546,6 @@ onMounted(() => {
         'header header avalanche'
         'logo cta avalanche'
     ;
-    
 }
 .main-header{
     grid-area: header;
@@ -459,6 +556,11 @@ onMounted(() => {
 .cta{
     grid-area: cta;
     justify-self: flex-end;
+}
+section.header-grid svg.line{
+    top: 70%;
+    left: 0;
+    grid-area: header;
 }
 
 
@@ -497,27 +599,28 @@ section.design #sub1{
     grid-area: 2 / 10 / 4 / 13;
 }
 section.design #project-1{
-    width: 100%;
+    justify-self: center;
     border-radius: var(--border-radius-general);
-    grid-area: 1 / 5 / 7 / 9;
+    grid-area: 1 / 4 / 6 / 10;
 }
 section.design #flower{
     width: 100%;
-    grid-area: 4 / 2 / 5 / 3;
+    grid-area: 3 / 2 / 3 / 3;
 }
 section.design .project-caption{
     grid-area: 1 / 1 / 2 / 4; 
 }
 section.design #sub2{
     align-self: flex-end;
-    grid-area: 6 / 1 / 8 / 4;
+    grid-area: 4 / 1 / 7 / 4;
 }
 section.design #description{
-    grid-area: 6 / 10 / 8 / 13;
+    align-self: flex-end;
+    grid-area: 4 / 10 / 7 / 13;
 }
 section.design .cta{
     justify-self: center;
-    grid-area: 7 / 6 / 8 / 8;
+    grid-area: 6 / 6 / 7 / 8;
 }
 /*
     *
@@ -525,10 +628,10 @@ section.design .cta{
     *
 */
 section.development > h3{
-    grid-area: 1 / 1 / 2 / 6;
+    grid-area: 1 / 1 / 2 / 13;
 }
-section.development #code{
-    grid-area: 2 / 9 / 6 / 13;
+section.development #pinball{
+    grid-area: 2 / 8 / 5 / 13;
 }
 section.development .project-caption{
     align-self: center;
@@ -547,13 +650,13 @@ section.development .sub-header{
     grid-area: 2 / 1 / 3 / 6; 
 }
 section.development #description{
-    grid-area: 3 / 1 / 5 / 6;
+    grid-area: 3 / 1 / 3 / 6;
 }
 section.development .cta{
     justify-self: unset;
     align-self: flex-end;
     height: fit-content;
-    grid-area: 5 / 1 / 5 / 6;
+    grid-area: 4 / 1 / 4 / 6;
 }
 /*
     *
@@ -561,20 +664,20 @@ section.development .cta{
     *
 */
 section.maintenance #building{
-    grid-area: 1 / 1 / 8 / 6;
+    grid-area: 1 / 1 / 5 / 6;
 }
 section.maintenance > h3 {
     grid-area: 1 / 8 / 1 / 13;
 }
 section.maintenance .sub-header{
-    grid-area: 2 / 8 / 4 / 12;
+    grid-area: 2 / 8 / 2 / 12;
 }
 section.maintenance #description{
-    grid-area: 4 / 8 / 7 / 12;
+    grid-area: 3 / 8 / 3 / 12;
 }
 section.maintenance .cta{
     justify-self: flex-start;
-    grid-area: 7 / 8 / 7 / 12;
+    grid-area: 4 / 8 / 4 / 12;
 }
 /*
     *
@@ -609,10 +712,16 @@ section.and-more{
     border: 1px solid var(--color-text-fade);
     border-radius: var(--border-radius-general);
     display: flex;
-    gap: var(--gap-grid);
     flex-direction: column;
+    justify-content: space-between;
+    gap: var(--gap-grid);
     padding: var(--padding-inline-page);
     width: clamp(18.75rem, 30vw, 50rem);
+}
+.description-container{
+    display: flex;
+    gap: var(--gap-grid);
+    flex-direction: column;
 }
 .dominoes-container{
     height: 20dvh;
@@ -649,6 +758,43 @@ section.projects .description{
 section.projects .fact-container{
     align-self: flex-end;
     grid-area: 3 / 1 / 5 / 3;
+}
+
+/*
+    *
+    *  PRICING SECTION
+    *
+*/
+section.closing > h3{
+    text-align: center;
+    justify-self: center;
+    grid-area: 1 / 1 / 1 / 13;
+}
+section.closing > h4{
+    text-align: center;
+    justify-self: center;
+    grid-area: 2 / 1 / 2 / 13; 
+}
+/*
+    *
+    *  FOOTER SECTION
+    *
+*/
+footer {
+    position: relative;
+    padding-inline: var(--padding-inline-page);
+    margin-bottom: var(--margin-footer);
+}
+footer #low-gravity{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+footer .end-credits{
+    grid-area: 3 / 1 / 3 / 13;
+    display: flex;
+    justify-content: space-between;
 }
 
 </style>
