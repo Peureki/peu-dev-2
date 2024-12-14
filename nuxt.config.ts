@@ -4,8 +4,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   modules: [
-    '@hypernym/nuxt-gsap', 
-    '@nuxtjs/google-fonts'
+    '@hypernym/nuxt-gsap',
+    '@nuxtjs/google-fonts',
+    'nuxt-gtag',
   ],
   googleFonts: {
     preload: true,
@@ -18,5 +19,7 @@ export default defineNuxtConfig({
       }
     },
   },
-  
+  gtag: {
+    id: 'G-FCBGEWH85Q',
+  },
 })

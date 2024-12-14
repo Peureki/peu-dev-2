@@ -18,7 +18,7 @@
             </div>
             <div class="overflow-hidden">
                 <div class="overflow-text underline">
-                    <a href="#services">small businesses.</a>
+                    <a href="#services" title="View services for your business">small businesses.</a>
                 </div>
             </div>
         </h1>
@@ -39,7 +39,7 @@
             </div>
         </h2>
 
-        <a class="cta" href="#services">
+        <a class="cta" href="#services" title="View services for your business">
             <p>discover services</p>
             <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.195 10.83L12 6.00001L7.195 1.17001C7.1516 1.11302 7.09647 1.06603 7.03333 1.0322C6.9702 0.998373 6.90053 0.978506 6.82904 0.973946C6.75756 0.969385 6.68593 0.980236 6.61901 1.00576C6.55208 1.03129 6.49142 1.0709 6.44114 1.12191C6.39085 1.17292 6.35211 1.23414 6.32754 1.30142C6.30297 1.36871 6.29315 1.44048 6.29873 1.51189C6.30431 1.5833 6.32517 1.65268 6.35989 1.71533C6.39462 1.77798 6.4424 1.83243 6.5 1.87501L10.095 5.50001L0.53 5.50001C0.397391 5.50001 0.270215 5.55269 0.176447 5.64646C0.0826787 5.74022 0.0299997 5.8674 0.0299997 6.00001C0.0299997 6.13262 0.0826787 6.2598 0.176447 6.35356C0.270215 6.44733 0.397391 6.50001 0.53 6.50001L10.095 6.50001L6.5 10.125C6.40651 10.2192 6.35425 10.3466 6.35472 10.4793C6.35519 10.612 6.40835 10.739 6.5025 10.8325C6.59665 10.926 6.72409 10.9783 6.85677 10.9778C6.98945 10.9773 7.11651 10.9242 7.21 10.83H7.195Z"/>
@@ -69,13 +69,13 @@
         -->
         <div class="project-caption">
             <p>featured project:</p>
-            <p>(1) Shogun</p>
+            <p>Shogun</p>
         </div>
 
         <p id="description">Crafting is our favorite hobby here. We praise our work to be modern, but also functional. Websites are a representation of the brand and one of the first things people see when searching. We strive to craft designs that showcases your work and connects you closer to your customers. 
         </p>
 
-        <a class="cta" href="#contact">
+        <a class="cta" href="#contact" title="Let's connect!">
             <p>i need designs</p>
             <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.195 10.83L12 6.00001L7.195 1.17001C7.1516 1.11302 7.09647 1.06603 7.03333 1.0322C6.9702 0.998373 6.90053 0.978506 6.82904 0.973946C6.75756 0.969385 6.68593 0.980236 6.61901 1.00576C6.55208 1.03129 6.49142 1.0709 6.44114 1.12191C6.39085 1.17292 6.35211 1.23414 6.32754 1.30142C6.30297 1.36871 6.29315 1.44048 6.29873 1.51189C6.30431 1.5833 6.32517 1.65268 6.35989 1.71533C6.39462 1.77798 6.4424 1.83243 6.5 1.87501L10.095 5.50001L0.53 5.50001C0.397391 5.50001 0.270215 5.55269 0.176447 5.64646C0.0826787 5.74022 0.0299997 5.8674 0.0299997 6.00001C0.0299997 6.13262 0.0826787 6.2598 0.176447 6.35356C0.270215 6.44733 0.397391 6.50001 0.53 6.50001L10.095 6.50001L6.5 10.125C6.40651 10.2192 6.35425 10.3466 6.35472 10.4793C6.35519 10.612 6.40835 10.739 6.5025 10.8325C6.59665 10.926 6.72409 10.9783 6.85677 10.9778C6.98945 10.9773 7.11651 10.9242 7.21 10.83H7.195Z"/>
@@ -111,7 +111,7 @@
         <p id="description">No matter where or how a website is built, it's through code. Even page builders such as Wordpress or Squarespace. We believe that having the code be as first-party as possible is the best way to maintain longevity, security, and keeping up-to-date. It's like Legos to us. Because we make it "from scratch", your website and tools will have the freedom to be designed and be implemented any way you like. Let us know your ideas and we'll come up with solutions for you.
         </p>
 
-        <a class="cta" href="#contact">
+        <a class="cta" href="#contact" title="Let's connect!">
             <p>i have ideas</p>
             <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.195 10.83L12 6.00001L7.195 1.17001C7.1516 1.11302 7.09647 1.06603 7.03333 1.0322C6.9702 0.998373 6.90053 0.978506 6.82904 0.973946C6.75756 0.969385 6.68593 0.980236 6.61901 1.00576C6.55208 1.03129 6.49142 1.0709 6.44114 1.12191C6.39085 1.17292 6.35211 1.23414 6.32754 1.30142C6.30297 1.36871 6.29315 1.44048 6.29873 1.51189C6.30431 1.5833 6.32517 1.65268 6.35989 1.71533C6.39462 1.77798 6.4424 1.83243 6.5 1.87501L10.095 5.50001L0.53 5.50001C0.397391 5.50001 0.270215 5.55269 0.176447 5.64646C0.0826787 5.74022 0.0299997 5.8674 0.0299997 6.00001C0.0299997 6.13262 0.0826787 6.2598 0.176447 6.35356C0.270215 6.44733 0.397391 6.50001 0.53 6.50001L10.095 6.50001L6.5 10.125C6.40651 10.2192 6.35425 10.3466 6.35472 10.4793C6.35519 10.612 6.40835 10.739 6.5025 10.8325C6.59665 10.926 6.72409 10.9783 6.85677 10.9778C6.98945 10.9773 7.11651 10.9242 7.21 10.83H7.195Z"/>
@@ -147,7 +147,7 @@
         <p id="description">Imagine a website as a house. Designers are the architects, developers are the builders. With any house, over time it will become outdated whether it's the content of the brand or the technology. Our job is the answer any updates you may have and to make sure that your website stays functional. You can think of us as your pocket developers!
         </p>
 
-        <a class="cta" href="#contact">
+        <a class="cta" href="#contact" title="Let's connect!">
             <p>i need a pocket dev</p>
             <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.195 10.83L12 6.00001L7.195 1.17001C7.1516 1.11302 7.09647 1.06603 7.03333 1.0322C6.9702 0.998373 6.90053 0.978506 6.82904 0.973946C6.75756 0.969385 6.68593 0.980236 6.61901 1.00576C6.55208 1.03129 6.49142 1.0709 6.44114 1.12191C6.39085 1.17292 6.35211 1.23414 6.32754 1.30142C6.30297 1.36871 6.29315 1.44048 6.29873 1.51189C6.30431 1.5833 6.32517 1.65268 6.35989 1.71533C6.39462 1.77798 6.4424 1.83243 6.5 1.87501L10.095 5.50001L0.53 5.50001C0.397391 5.50001 0.270215 5.55269 0.176447 5.64646C0.0826787 5.74022 0.0299997 5.8674 0.0299997 6.00001C0.0299997 6.13262 0.0826787 6.2598 0.176447 6.35356C0.270215 6.44733 0.397391 6.50001 0.53 6.50001L10.095 6.50001L6.5 10.125C6.40651 10.2192 6.35425 10.3466 6.35472 10.4793C6.35519 10.612 6.40835 10.739 6.5025 10.8325C6.59665 10.926 6.72409 10.9783 6.85677 10.9778C6.98945 10.9773 7.11651 10.9242 7.21 10.83H7.195Z"/>
@@ -185,7 +185,7 @@
                     </div>
                         
 
-                    <a class="cta" href="#contact">
+                    <a class="cta" href="#contact" title="Let's connect!">
                         <p>i need hosting</p>
                         <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.195 10.83L12 6.00001L7.195 1.17001C7.1516 1.11302 7.09647 1.06603 7.03333 1.0322C6.9702 0.998373 6.90053 0.978506 6.82904 0.973946C6.75756 0.969385 6.68593 0.980236 6.61901 1.00576C6.55208 1.03129 6.49142 1.0709 6.44114 1.12191C6.39085 1.17292 6.35211 1.23414 6.32754 1.30142C6.30297 1.36871 6.29315 1.44048 6.29873 1.51189C6.30431 1.5833 6.32517 1.65268 6.35989 1.71533C6.39462 1.77798 6.4424 1.83243 6.5 1.87501L10.095 5.50001L0.53 5.50001C0.397391 5.50001 0.270215 5.55269 0.176447 5.64646C0.0826787 5.74022 0.0299997 5.8674 0.0299997 6.00001C0.0299997 6.13262 0.0826787 6.2598 0.176447 6.35356C0.270215 6.44733 0.397391 6.50001 0.53 6.50001L10.095 6.50001L6.5 10.125C6.40651 10.2192 6.35425 10.3466 6.35472 10.4793C6.35519 10.612 6.40835 10.739 6.5025 10.8325C6.59665 10.926 6.72409 10.9783 6.85677 10.9778C6.98945 10.9773 7.11651 10.9242 7.21 10.83H7.195Z"/>
@@ -202,7 +202,7 @@
                         <p class="description">A large chunk of SEO is all about how a website is built. Search engines crawl websites that use the correct semantics, have great performance, and use appropiate meta tags. Because we code 'from scratch' and is first party, we can directly create and input that data to guarantee your website is built with everything needed to have the best chances of getting the top spot in a search. </p>
                     </div>
                         
-                    <a class="cta" href="#contact">
+                    <a class="cta" href="#contact" title="Let's connect!">
                         <p>i want organic leads</p>
                         <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.195 10.83L12 6.00001L7.195 1.17001C7.1516 1.11302 7.09647 1.06603 7.03333 1.0322C6.9702 0.998373 6.90053 0.978506 6.82904 0.973946C6.75756 0.969385 6.68593 0.980236 6.61901 1.00576C6.55208 1.03129 6.49142 1.0709 6.44114 1.12191C6.39085 1.17292 6.35211 1.23414 6.32754 1.30142C6.30297 1.36871 6.29315 1.44048 6.29873 1.51189C6.30431 1.5833 6.32517 1.65268 6.35989 1.71533C6.39462 1.77798 6.4424 1.83243 6.5 1.87501L10.095 5.50001L0.53 5.50001C0.397391 5.50001 0.270215 5.55269 0.176447 5.64646C0.0826787 5.74022 0.0299997 5.8674 0.0299997 6.00001C0.0299997 6.13262 0.0826787 6.2598 0.176447 6.35356C0.270215 6.44733 0.397391 6.50001 0.53 6.50001L10.095 6.50001L6.5 10.125C6.40651 10.2192 6.35425 10.3466 6.35472 10.4793C6.35519 10.612 6.40835 10.739 6.5025 10.8325C6.59665 10.926 6.72409 10.9783 6.85677 10.9778C6.98945 10.9773 7.11651 10.9242 7.21 10.83H7.195Z"/>
@@ -219,7 +219,7 @@
                         <p class="description">We are your pocket developers. Email us, call us, DM us, we are here to help you. Our goal is to always make sure you never have to worry about your website. Sometimes you may need to change something. We got you!</p>
                     </div>
                 
-                    <a class="cta" href="#contact">
+                    <a class="cta" href="#contact" title="Let's connect!">
                         <p>i need that</p>
                         <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.195 10.83L12 6.00001L7.195 1.17001C7.1516 1.11302 7.09647 1.06603 7.03333 1.0322C6.9702 0.998373 6.90053 0.978506 6.82904 0.973946C6.75756 0.969385 6.68593 0.980236 6.61901 1.00576C6.55208 1.03129 6.49142 1.0709 6.44114 1.12191C6.39085 1.17292 6.35211 1.23414 6.32754 1.30142C6.30297 1.36871 6.29315 1.44048 6.29873 1.51189C6.30431 1.5833 6.32517 1.65268 6.35989 1.71533C6.39462 1.77798 6.4424 1.83243 6.5 1.87501L10.095 5.50001L0.53 5.50001C0.397391 5.50001 0.270215 5.55269 0.176447 5.64646C0.0826787 5.74022 0.0299997 5.8674 0.0299997 6.00001C0.0299997 6.13262 0.0826787 6.2598 0.176447 6.35356C0.270215 6.44733 0.397391 6.50001 0.53 6.50001L10.095 6.50001L6.5 10.125C6.40651 10.2192 6.35425 10.3466 6.35472 10.4793C6.35519 10.612 6.40835 10.739 6.5025 10.8325C6.59665 10.926 6.72409 10.9783 6.85677 10.9778C6.98945 10.9773 7.11651 10.9242 7.21 10.83H7.195Z"/>
@@ -262,7 +262,7 @@
     <Project
         name="Peu Research Center"
         href="https://peuresearchcenter.com/"
-        :logo="PeuLogo"
+        :logo="PRCLogo"
         :mockup="PeuMockup1"
         :attributes="['web app', 'laravel', 'vue.js', 'mysql', 'digitalocean', 'laravelforge']"
     >
@@ -296,16 +296,17 @@
         </section>
 
         <div class="end-credits">
-            <a class="p-link" href="tel:331-256-7731">331-256-7731</a>
-            <a class="p-link logo-font" href="mailto:matt@peu.dev">
+            <a class="p-link" href="tel:331-256-7731" title="Call us at 331-256-7731">331-256-7731</a>
+            <a class="p-link logo-font" href="mailto:matt@peu.dev" title="Email us at matt@peu.dev">
                 <span class="green">peu</span>
                 <span class="pink">.</span>
                 <span class="blue">dev</span>
             </a>
             <div class="socials">
-                <a class="svg-link" href="https://www.linkedin.com/in/mattnewyen/" target="_blank">
+                <a class="svg-link" href="https://www.linkedin.com/in/mattnewyen/" target="_blank" title="LinkedIn: https://www.linkedin.com/in/mattnewyen/">
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M16 0C16.5304 0 17.0391 0.210714 17.4142 0.585786C17.7893 0.960859 18 1.46957 18 2V16C18 16.5304 17.7893 17.0391 17.4142 17.4142C17.0391 17.7893 16.5304 18 16 18H2C1.46957 18 0.960859 17.7893 0.585786 17.4142C0.210714 17.0391 0 16.5304 0 16V2C0 1.46957 0.210714 0.960859 0.585786 0.585786C0.960859 0.210714 1.46957 0 2 0H16ZM15.5 15.5V10.2C15.5 9.33539 15.1565 8.5062 14.5452 7.89483C13.9338 7.28346 13.1046 6.94 12.24 6.94C11.39 6.94 10.4 7.46 9.92 8.24V7.13H7.13V15.5H9.92V10.57C9.92 9.8 10.54 9.17 11.31 9.17C11.6813 9.17 12.0374 9.3175 12.2999 9.58005C12.5625 9.8426 12.71 10.1987 12.71 10.57V15.5H15.5ZM3.88 5.56C4.32556 5.56 4.75288 5.383 5.06794 5.06794C5.383 4.75288 5.56 4.32556 5.56 3.88C5.56 2.95 4.81 2.19 3.88 2.19C3.43178 2.19 3.00193 2.36805 2.68499 2.68499C2.36805 3.00193 2.19 3.43178 2.19 3.88C2.19 4.81 2.95 5.56 3.88 5.56ZM5.27 15.5V7.13H2.5V15.5H5.27Z" fill="var(--color-text)"/>
+                        <title>LinkedIn: https://www.linkedin.com/in/mattnewyen/</title>
                     </svg>
                 </a>
             </div>
@@ -317,6 +318,7 @@
 import ShogunMenu1 from '~/assets/imgs/shogun/menu-1.webp'
 import ShogunFlower1 from '~/assets/imgs/shogun/sakura-flower-1.webp'
 import ShogunCode from '~/assets/imgs/shogun/code.webp'
+import PeuLogo from '~/assets/imgs/logo.svg'
 
 // *
 // * PROJECT IMAGES
@@ -326,7 +328,7 @@ import ShogunLogo from '~/assets/imgs/shogun/logo.svg'
 import ShogunMockup1 from '~/assets/imgs/shogun/mockup-1.webp'
 
 // PROJECT: PEU RESEARCH CENTER
-import PeuLogo from '~/assets/imgs/peu-research-center/Peu_Choya.webp'
+import PRCLogo from '~/assets/imgs/peu-research-center/Peu_Choya.webp'
 import PeuMockup1 from '~/assets/imgs/peu-research-center/mockup-1.webp'
 
 
@@ -334,6 +336,44 @@ import Lenis from 'lenis';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Pinball from '~/components/Pinball.vue'
 
+// *
+// * SEO HEAD AND META
+// * 
+const seoTitle = 'peu.dev | Your Pocket Web Developer',
+    seoContent = 'Custom web design, development, and maintenance services tailored to your brand. We create unique websites that prioritize your vision and drive results.';
+
+
+useHead({
+    meta: [
+        {
+            name: seoTitle,
+            content: seoContent, 
+        }
+    ],
+    htmlAttrs: {
+        lang: 'en'
+    },
+    link: [
+        {
+        rel: 'icon',
+        type: 'image/svg',
+        href: '/favicon.svg'
+        }
+    ]
+})
+
+useSeoMeta({
+    title: seoTitle, 
+    description: seoContent, 
+    ogTitle: seoTitle, 
+    ogDescription: seoContent, 
+    ogImage: PeuLogo,
+    ogUrl: 'localhost:3000',
+    twitterTitle: seoTitle, 
+    twitterDescription: seoContent, 
+    twitterImage: PeuLogo, 
+    twitterCard: seoContent,  
+})
 
 const { $gsap } = useNuxtApp();
 $gsap.registerPlugin(ScrollTrigger);
