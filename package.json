@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxtjs/google-fonts": "^3.2.0",
     "lenis": "^1.1.16",
     "matter-js": "^0.20.0",
     "nuxt": "^3.14.159",

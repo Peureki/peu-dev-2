@@ -18,7 +18,7 @@
             </div>
             <div class="overflow-hidden">
                 <div class="overflow-text underline">
-                    small businesses.
+                    <a href="#services">small businesses.</a>
                 </div>
             </div>
         </h1>
@@ -39,14 +39,14 @@
             </div>
         </h2>
 
-        <button class="cta">
+        <a class="cta" href="#services">
             <p>discover services</p>
             <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.195 10.83L12 6.00001L7.195 1.17001C7.1516 1.11302 7.09647 1.06603 7.03333 1.0322C6.9702 0.998373 6.90053 0.978506 6.82904 0.973946C6.75756 0.969385 6.68593 0.980236 6.61901 1.00576C6.55208 1.03129 6.49142 1.0709 6.44114 1.12191C6.39085 1.17292 6.35211 1.23414 6.32754 1.30142C6.30297 1.36871 6.29315 1.44048 6.29873 1.51189C6.30431 1.5833 6.32517 1.65268 6.35989 1.71533C6.39462 1.77798 6.4424 1.83243 6.5 1.87501L10.095 5.50001L0.53 5.50001C0.397391 5.50001 0.270215 5.55269 0.176447 5.64646C0.0826787 5.74022 0.0299997 5.8674 0.0299997 6.00001C0.0299997 6.13262 0.0826787 6.2598 0.176447 6.35356C0.270215 6.44733 0.397391 6.50001 0.53 6.50001L10.095 6.50001L6.5 10.125C6.40651 10.2192 6.35425 10.3466 6.35472 10.4793C6.35519 10.612 6.40835 10.739 6.5025 10.8325C6.59665 10.926 6.72409 10.9783 6.85677 10.9778C6.98945 10.9773 7.11651 10.9242 7.21 10.83H7.195Z"/>
                 <title>Discover services</title>
             </svg>
 
-        </button>
+        </a>
     </section>
 
     <!--
@@ -54,7 +54,7 @@
         * DESIGN SECTION
         *
     -->
-    <section class="design grid">
+    <section class="design grid" id="services">
         <h3 class="overflow-hidden">
             <div class="overflow-h3 green">design</div>
         </h3>
@@ -75,13 +75,13 @@
         <p id="description">Crafting is our favorite hobby here. We praise our work to be modern, but also functional. Websites are a representation of the brand and one of the first things people see when searching. We strive to craft designs that showcases your work and connects you closer to your customers. 
         </p>
 
-        <button class="cta">
+        <a class="cta" href="#contact">
             <p>i need designs</p>
             <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.195 10.83L12 6.00001L7.195 1.17001C7.1516 1.11302 7.09647 1.06603 7.03333 1.0322C6.9702 0.998373 6.90053 0.978506 6.82904 0.973946C6.75756 0.969385 6.68593 0.980236 6.61901 1.00576C6.55208 1.03129 6.49142 1.0709 6.44114 1.12191C6.39085 1.17292 6.35211 1.23414 6.32754 1.30142C6.30297 1.36871 6.29315 1.44048 6.29873 1.51189C6.30431 1.5833 6.32517 1.65268 6.35989 1.71533C6.39462 1.77798 6.4424 1.83243 6.5 1.87501L10.095 5.50001L0.53 5.50001C0.397391 5.50001 0.270215 5.55269 0.176447 5.64646C0.0826787 5.74022 0.0299997 5.8674 0.0299997 6.00001C0.0299997 6.13262 0.0826787 6.2598 0.176447 6.35356C0.270215 6.44733 0.397391 6.50001 0.53 6.50001L10.095 6.50001L6.5 10.125C6.40651 10.2192 6.35425 10.3466 6.35472 10.4793C6.35519 10.612 6.40835 10.739 6.5025 10.8325C6.59665 10.926 6.72409 10.9783 6.85677 10.9778C6.98945 10.9773 7.11651 10.9242 7.21 10.83H7.195Z"/>
                 <title>Discover services</title>
             </svg>
-        </button>
+        </a>
 
         <img class="portrait" id="project-1" :src="ShogunMenu1" alt="Example screenshot of Shogun Steakhouse Naperville's menu page" title="Shogun Steakhouse Naperville's menu page">
 
@@ -111,13 +111,13 @@
         <p id="description">No matter where or how a website is built, it's through code. Even page builders such as Wordpress or Squarespace. We believe that having the code be as first-party as possible is the best way to maintain longevity, security, and keeping up-to-date. It's like Legos to us. Because we make it "from scratch", your website and tools will have the freedom to be designed and be implemented any way you like. Let us know your ideas and we'll come up with solutions for you.
         </p>
 
-        <button class="cta">
+        <a class="cta" href="#contact">
             <p>i have ideas</p>
             <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.195 10.83L12 6.00001L7.195 1.17001C7.1516 1.11302 7.09647 1.06603 7.03333 1.0322C6.9702 0.998373 6.90053 0.978506 6.82904 0.973946C6.75756 0.969385 6.68593 0.980236 6.61901 1.00576C6.55208 1.03129 6.49142 1.0709 6.44114 1.12191C6.39085 1.17292 6.35211 1.23414 6.32754 1.30142C6.30297 1.36871 6.29315 1.44048 6.29873 1.51189C6.30431 1.5833 6.32517 1.65268 6.35989 1.71533C6.39462 1.77798 6.4424 1.83243 6.5 1.87501L10.095 5.50001L0.53 5.50001C0.397391 5.50001 0.270215 5.55269 0.176447 5.64646C0.0826787 5.74022 0.0299997 5.8674 0.0299997 6.00001C0.0299997 6.13262 0.0826787 6.2598 0.176447 6.35356C0.270215 6.44733 0.397391 6.50001 0.53 6.50001L10.095 6.50001L6.5 10.125C6.40651 10.2192 6.35425 10.3466 6.35472 10.4793C6.35519 10.612 6.40835 10.739 6.5025 10.8325C6.59665 10.926 6.72409 10.9783 6.85677 10.9778C6.98945 10.9773 7.11651 10.9242 7.21 10.83H7.195Z"/>
                 <title>Discover services</title>
             </svg>
-        </button>
+        </a>
 
 
         <svg id="hand-drawn-arrow" width="32" height="165" viewBox="0 0 32 165" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -147,13 +147,13 @@
         <p id="description">Imagine a website as a house. Designers are the architects, developers are the builders. With any house, over time it will become outdated whether it's the content of the brand or the technology. Our job is the answer any updates you may have and to make sure that your website stays functional. You can think of us as your pocket developers!
         </p>
 
-        <button class="cta">
+        <a class="cta" href="#contact">
             <p>i need a pocket dev</p>
             <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.195 10.83L12 6.00001L7.195 1.17001C7.1516 1.11302 7.09647 1.06603 7.03333 1.0322C6.9702 0.998373 6.90053 0.978506 6.82904 0.973946C6.75756 0.969385 6.68593 0.980236 6.61901 1.00576C6.55208 1.03129 6.49142 1.0709 6.44114 1.12191C6.39085 1.17292 6.35211 1.23414 6.32754 1.30142C6.30297 1.36871 6.29315 1.44048 6.29873 1.51189C6.30431 1.5833 6.32517 1.65268 6.35989 1.71533C6.39462 1.77798 6.4424 1.83243 6.5 1.87501L10.095 5.50001L0.53 5.50001C0.397391 5.50001 0.270215 5.55269 0.176447 5.64646C0.0826787 5.74022 0.0299997 5.8674 0.0299997 6.00001C0.0299997 6.13262 0.0826787 6.2598 0.176447 6.35356C0.270215 6.44733 0.397391 6.50001 0.53 6.50001L10.095 6.50001L6.5 10.125C6.40651 10.2192 6.35425 10.3466 6.35472 10.4793C6.35519 10.612 6.40835 10.739 6.5025 10.8325C6.59665 10.926 6.72409 10.9783 6.85677 10.9778C6.98945 10.9773 7.11651 10.9242 7.21 10.83H7.195Z"/>
                 <title>Discover services</title>
             </svg>
-        </button>
+        </a>
     </section>
     <!--
         *
@@ -175,62 +175,66 @@
         </h3>
 
         <div class="and-more-container">
-            <div class="service">
-                <div class="description-container">
-                    <h4 class="overflow-hidden">
-                        <div class="overflow-h4">hosting</div>
-                    </h4>
-                    <p class="description">Like what we said in maintenance, a website is going to need a space to call home. We can provide an affordable and comfortable place so you never have to worry about the technical details. Your website will live 100% of the time. If something does happen, we'll have backups prepared!</p>
-                </div>
-                    
+            <div class="service-container">
+                <div class="service">
+                    <div class="description-container">
+                        <h4 class="overflow-hidden">
+                            <div class="overflow-h4">hosting</div>
+                        </h4>
+                        <p class="description">Like what we said in maintenance, a website is going to need a space to call home. We can provide an affordable and comfortable place so you never have to worry about the technical details. Your website will live 100% of the time. If something does happen, we'll have backups prepared!</p>
+                    </div>
+                        
 
-                <button class="cta">
-                    <p>i need hosting</p>
-                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.195 10.83L12 6.00001L7.195 1.17001C7.1516 1.11302 7.09647 1.06603 7.03333 1.0322C6.9702 0.998373 6.90053 0.978506 6.82904 0.973946C6.75756 0.969385 6.68593 0.980236 6.61901 1.00576C6.55208 1.03129 6.49142 1.0709 6.44114 1.12191C6.39085 1.17292 6.35211 1.23414 6.32754 1.30142C6.30297 1.36871 6.29315 1.44048 6.29873 1.51189C6.30431 1.5833 6.32517 1.65268 6.35989 1.71533C6.39462 1.77798 6.4424 1.83243 6.5 1.87501L10.095 5.50001L0.53 5.50001C0.397391 5.50001 0.270215 5.55269 0.176447 5.64646C0.0826787 5.74022 0.0299997 5.8674 0.0299997 6.00001C0.0299997 6.13262 0.0826787 6.2598 0.176447 6.35356C0.270215 6.44733 0.397391 6.50001 0.53 6.50001L10.095 6.50001L6.5 10.125C6.40651 10.2192 6.35425 10.3466 6.35472 10.4793C6.35519 10.612 6.40835 10.739 6.5025 10.8325C6.59665 10.926 6.72409 10.9783 6.85677 10.9778C6.98945 10.9773 7.11651 10.9242 7.21 10.83H7.195Z"/>
-                        <title>Discover services</title>
-                    </svg>
-                </button>
+                    <a class="cta" href="#contact">
+                        <p>i need hosting</p>
+                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.195 10.83L12 6.00001L7.195 1.17001C7.1516 1.11302 7.09647 1.06603 7.03333 1.0322C6.9702 0.998373 6.90053 0.978506 6.82904 0.973946C6.75756 0.969385 6.68593 0.980236 6.61901 1.00576C6.55208 1.03129 6.49142 1.0709 6.44114 1.12191C6.39085 1.17292 6.35211 1.23414 6.32754 1.30142C6.30297 1.36871 6.29315 1.44048 6.29873 1.51189C6.30431 1.5833 6.32517 1.65268 6.35989 1.71533C6.39462 1.77798 6.4424 1.83243 6.5 1.87501L10.095 5.50001L0.53 5.50001C0.397391 5.50001 0.270215 5.55269 0.176447 5.64646C0.0826787 5.74022 0.0299997 5.8674 0.0299997 6.00001C0.0299997 6.13262 0.0826787 6.2598 0.176447 6.35356C0.270215 6.44733 0.397391 6.50001 0.53 6.50001L10.095 6.50001L6.5 10.125C6.40651 10.2192 6.35425 10.3466 6.35472 10.4793C6.35519 10.612 6.40835 10.739 6.5025 10.8325C6.59665 10.926 6.72409 10.9783 6.85677 10.9778C6.98945 10.9773 7.11651 10.9242 7.21 10.83H7.195Z"/>
+                            <title>Discover services</title>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="service">
+                    <div class="description-container">
+                        <h4 class="overflow-hidden">
+                            <div class="overflow-h4">onsite SEO</div> 
+                        </h4>
+                        <p class="description">A large chunk of SEO is all about how a website is built. Search engines crawl websites that use the correct semantics, have great performance, and use appropiate meta tags. Because we code 'from scratch' and is first party, we can directly create and input that data to guarantee your website is built with everything needed to have the best chances of getting the top spot in a search. </p>
+                    </div>
+                        
+                    <a class="cta" href="#contact">
+                        <p>i want organic leads</p>
+                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.195 10.83L12 6.00001L7.195 1.17001C7.1516 1.11302 7.09647 1.06603 7.03333 1.0322C6.9702 0.998373 6.90053 0.978506 6.82904 0.973946C6.75756 0.969385 6.68593 0.980236 6.61901 1.00576C6.55208 1.03129 6.49142 1.0709 6.44114 1.12191C6.39085 1.17292 6.35211 1.23414 6.32754 1.30142C6.30297 1.36871 6.29315 1.44048 6.29873 1.51189C6.30431 1.5833 6.32517 1.65268 6.35989 1.71533C6.39462 1.77798 6.4424 1.83243 6.5 1.87501L10.095 5.50001L0.53 5.50001C0.397391 5.50001 0.270215 5.55269 0.176447 5.64646C0.0826787 5.74022 0.0299997 5.8674 0.0299997 6.00001C0.0299997 6.13262 0.0826787 6.2598 0.176447 6.35356C0.270215 6.44733 0.397391 6.50001 0.53 6.50001L10.095 6.50001L6.5 10.125C6.40651 10.2192 6.35425 10.3466 6.35472 10.4793C6.35519 10.612 6.40835 10.739 6.5025 10.8325C6.59665 10.926 6.72409 10.9783 6.85677 10.9778C6.98945 10.9773 7.11651 10.9242 7.21 10.83H7.195Z"/>
+                            <title>Discover services</title>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="service">
+                    <div class="description-container">
+                        <h4 class="overflow-hidden">
+                            <div class="overflow-h4">on-call</div>
+                        </h4>
+                        <p class="description">We are your pocket developers. Email us, call us, DM us, we are here to help you. Our goal is to always make sure you never have to worry about your website. Sometimes you may need to change something. We got you!</p>
+                    </div>
+                
+                    <a class="cta" href="#contact">
+                        <p>i need that</p>
+                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.195 10.83L12 6.00001L7.195 1.17001C7.1516 1.11302 7.09647 1.06603 7.03333 1.0322C6.9702 0.998373 6.90053 0.978506 6.82904 0.973946C6.75756 0.969385 6.68593 0.980236 6.61901 1.00576C6.55208 1.03129 6.49142 1.0709 6.44114 1.12191C6.39085 1.17292 6.35211 1.23414 6.32754 1.30142C6.30297 1.36871 6.29315 1.44048 6.29873 1.51189C6.30431 1.5833 6.32517 1.65268 6.35989 1.71533C6.39462 1.77798 6.4424 1.83243 6.5 1.87501L10.095 5.50001L0.53 5.50001C0.397391 5.50001 0.270215 5.55269 0.176447 5.64646C0.0826787 5.74022 0.0299997 5.8674 0.0299997 6.00001C0.0299997 6.13262 0.0826787 6.2598 0.176447 6.35356C0.270215 6.44733 0.397391 6.50001 0.53 6.50001L10.095 6.50001L6.5 10.125C6.40651 10.2192 6.35425 10.3466 6.35472 10.4793C6.35519 10.612 6.40835 10.739 6.5025 10.8325C6.59665 10.926 6.72409 10.9783 6.85677 10.9778C6.98945 10.9773 7.11651 10.9242 7.21 10.83H7.195Z"/>
+                            <title>Discover services</title>
+                        </svg>
+                    </a>
+                </div>
             </div>
 
-            <div class="service">
-                <div class="description-container">
-                    <h4 class="overflow-hidden">
-                        <div class="overflow-h4">onsite SEO</div> 
-                    </h4>
-                    <p class="description">A large chunk of SEO is all about how a website is built. Search engines crawl websites that use the correct semantics, have great performance, and use appropiate meta tags. Because we code 'from scratch' and is first party, we can directly create and input that data to guarantee your website is built with everything needed to have the best chances of getting the top spot in a search. </p>
-                </div>
-                    
-                <button class="cta">
-                    <p>i want organic leads</p>
-                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.195 10.83L12 6.00001L7.195 1.17001C7.1516 1.11302 7.09647 1.06603 7.03333 1.0322C6.9702 0.998373 6.90053 0.978506 6.82904 0.973946C6.75756 0.969385 6.68593 0.980236 6.61901 1.00576C6.55208 1.03129 6.49142 1.0709 6.44114 1.12191C6.39085 1.17292 6.35211 1.23414 6.32754 1.30142C6.30297 1.36871 6.29315 1.44048 6.29873 1.51189C6.30431 1.5833 6.32517 1.65268 6.35989 1.71533C6.39462 1.77798 6.4424 1.83243 6.5 1.87501L10.095 5.50001L0.53 5.50001C0.397391 5.50001 0.270215 5.55269 0.176447 5.64646C0.0826787 5.74022 0.0299997 5.8674 0.0299997 6.00001C0.0299997 6.13262 0.0826787 6.2598 0.176447 6.35356C0.270215 6.44733 0.397391 6.50001 0.53 6.50001L10.095 6.50001L6.5 10.125C6.40651 10.2192 6.35425 10.3466 6.35472 10.4793C6.35519 10.612 6.40835 10.739 6.5025 10.8325C6.59665 10.926 6.72409 10.9783 6.85677 10.9778C6.98945 10.9773 7.11651 10.9242 7.21 10.83H7.195Z"/>
-                        <title>Discover services</title>
-                    </svg>
-                </button>
-            </div>
-
-            <div class="service">
-                <div class="description-container">
-                    <h4 class="overflow-hidden">
-                        <div class="overflow-h4">on-call</div>
-                    </h4>
-                    <p class="description">We are your pocket developers. Email us, call us, DM us, we are here to help you. Our goal is to always make sure you never have to worry about your website. Sometimes you may need to change something. We got you!</p>
-                </div>
-            
-                <button class="cta">
-                    <p>i need that</p>
-                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.195 10.83L12 6.00001L7.195 1.17001C7.1516 1.11302 7.09647 1.06603 7.03333 1.0322C6.9702 0.998373 6.90053 0.978506 6.82904 0.973946C6.75756 0.969385 6.68593 0.980236 6.61901 1.00576C6.55208 1.03129 6.49142 1.0709 6.44114 1.12191C6.39085 1.17292 6.35211 1.23414 6.32754 1.30142C6.30297 1.36871 6.29315 1.44048 6.29873 1.51189C6.30431 1.5833 6.32517 1.65268 6.35989 1.71533C6.39462 1.77798 6.4424 1.83243 6.5 1.87501L10.095 5.50001L0.53 5.50001C0.397391 5.50001 0.270215 5.55269 0.176447 5.64646C0.0826787 5.74022 0.0299997 5.8674 0.0299997 6.00001C0.0299997 6.13262 0.0826787 6.2598 0.176447 6.35356C0.270215 6.44733 0.397391 6.50001 0.53 6.50001L10.095 6.50001L6.5 10.125C6.40651 10.2192 6.35425 10.3466 6.35472 10.4793C6.35519 10.612 6.40835 10.739 6.5025 10.8325C6.59665 10.926 6.72409 10.9783 6.85677 10.9778C6.98945 10.9773 7.11651 10.9242 7.21 10.83H7.195Z"/>
-                        <title>Discover services</title>
-                    </svg>
-                </button>
+            <div v-if="dominoesToggle" class="dominoes-container">
+                <Dominoes/>
             </div>
         </div>
 
-        <div v-if="dominoesToggle" class="dominoes-container">
-            <Dominoes/>
-        </div>
+        
         
     </section>
 
@@ -277,7 +281,7 @@
 
     
 
-    <footer class="footer grid">
+    <footer class="footer grid" id="contact">
         <!-- <LowGravity id="low-gravity"/> -->
 
         <section class="closing grid">
@@ -319,10 +323,10 @@ import ShogunCode from '~/assets/imgs/shogun/code.webp'
 // *
 // PROJECT: SHOGUN 
 import ShogunLogo from '~/assets/imgs/shogun/logo.svg'
-import ShogunMockup1 from '~/assets/imgs/shogun/mockup-1.jpg'
+import ShogunMockup1 from '~/assets/imgs/shogun/mockup-1.webp'
 
 // PROJECT: PEU RESEARCH CENTER
-import PeuLogo from '~/assets/imgs/peu-research-center/Peu_Choya.png'
+import PeuLogo from '~/assets/imgs/peu-research-center/Peu_Choya.webp'
 import PeuMockup1 from '~/assets/imgs/peu-research-center/mockup-1.webp'
 
 
@@ -609,6 +613,10 @@ section.header-grid .main-header{
     align-self: flex-end;
     grid-area: 1 / 1 / 1 / 10; 
 }
+section.header-grid .main-header a{
+    font-family: var(--font-family-readex);
+    font-size: var(--font-size-h1);
+}
 section.header-grid .avalanche{
     width: 30vw;
     grid-area: 1 / 10 / 3 / 13;
@@ -705,6 +713,12 @@ section.design .cta{
     justify-self: center;
     grid-area: 6 / 4 / 7 / 10;
 }
+/*
+    *
+    * MOBILE
+    * DESIGN SECTION
+    *
+*/
 @media (max-width: 768px){
     section.design > h3{
         grid-area: 1 / 1 / 1 / 5;
@@ -772,6 +786,44 @@ section.development .cta{
 }
 /*
     *
+    * MOBILE
+    * DEVELOPMENT SECTION
+    *
+*/
+@media (max-width: 768px){
+    section.development > h3 {
+        grid-area: 1 / 1 / 1 / 5;
+    }
+    section.development .sub-header{
+        grid-area: 2 / 1 / 2 / 5;
+    }
+    section.development .project-caption{
+        align-self: flex-start;
+        justify-self: center;
+        grid-area: 3 / 1 / 3 / 5; 
+    }
+    section.development #hand-drawn-arrow{
+        top: 10%;
+        left: 50%;
+        transform: translateY(-10%) rotate(-10deg);
+        bottom: unset;
+        grid-area: 3 / 1 / 3 / 5;
+    }
+    section.development #pinball{
+        height: 70dvh;
+        grid-area: 3 / 1 / 3 / 5; 
+    }
+    section.development #description{
+        grid-area: 4 / 1 / 4 / 5;
+    }
+    section.development .cta{
+        justify-self: flex-start;
+        grid-area: 5 / 1 / 5 / 5;
+    }
+}
+
+/*
+    *
     * MAINTENANCE SECTION
     *
 */
@@ -793,17 +845,27 @@ section.maintenance .cta{
 }
 /*
     *
-    * WHOLE.PROCESS SECTION
+    * MOBILE
+    * MAINTENANCE SECTION
     *
 */
-section.whole-process{
-    grid-template-rows: 25dvh auto;
-}
-section.whole-process #dominoes-1{
-    grid-area: 1 / 1 / 2 / 13; 
-}
-section.whole-process > h3 {
-    grid-area: 2 / 1 / 2 / 8; 
+@media (max-width: 768px){
+    section.maintenance > h3 {
+        grid-area: 1 / 1 / 1 / 5;
+    }
+    section.maintenance .sub-header{
+        grid-area: 2 / 1 / 2 / 5; 
+    }
+    section.maintenance #building{
+        height: 70dvh;
+        grid-area: 3 / 1 / 3 / 5; 
+    }
+    section.maintenance #description{
+        grid-area: 4 / 1 / 4 / 5; 
+    }
+    section.maintenance .cta{
+        grid-area: 5 / 1 / 5 / 5;
+    }
 }
 /*
     *
@@ -816,6 +878,11 @@ section.and-more{
     gap: var(--gap-grid);
 }
 .and-more-container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-grid);
+}
+.service-container{
     display: flex;
     flex-wrap: wrap;
     gap: var(--gap-grid);
@@ -840,48 +907,24 @@ section.and-more{
 .dominoes-container{
     height: 20dvh;
 }
-@media (max-width: 670px){
+/*
+    *
+    * MOBILE
+    * 'AND MORE' SECTION
+    *
+*/
+@media (max-width: 768px){
     .and-more-container{
         justify-content: center;
+        flex-direction: column-reverse;
     }
     .service{
         width: 100%;
     }
+    section.and-more .dominoes-container{
+        height: 10dvh;
+    }
 }
-/*
-    *
-    *  PROJECTS SECTION
-    *
-*/
-section.projects > h3 {
-    grid-area: 1 / 1 / 1 / 13;
-    justify-self: center;
-}
-section.projects > h4 {
-    grid-area: 2 / 9 / 2 / 13; 
-}
-section.projects .project-logo {
-    grid-area: 2 / 1 / 2 / 2; 
-}
-section.projects .mockup{
-    grid-area: 2 / 3 / 5 / 8;
-}
-section.projects .attributes{
-    grid-area: 3 / 9 / 3 / 13;
-}
-section.projects .cta{
-    justify-self: flex-start;
-    align-self: flex-end;
-    grid-area: 4 / 9 / 4 / 13;
-}
-section.projects .description{
-    grid-area: 5 / 9 / 5 / 13; 
-}
-section.projects .fact-container{
-    align-self: flex-end;
-    grid-area: 3 / 1 / 5 / 3;
-}
-
 /*
     *
     *  PRICING SECTION
@@ -920,14 +963,7 @@ footer .end-credits{
 }
 
 @media (max-width: 768px){
-    section.desgin,
-    section.development,
-    section.maintenance,
-    section.and-more,
-    section.projects,
-    footer{
-        display: none;
-    }
+
 }
 
 </style>

@@ -103,8 +103,32 @@ section.projects .cta-container{
 section.projects .description{
     grid-area: 5 / 9 / 5 / 13; 
 }
-section.projects .fact-container{
+section.projects :deep(.fact-container){
     align-self: flex-end;
     grid-area: 3 / 1 / 5 / 3;
+}
+@media (max-width: 768px){
+    section.projects > h3 {
+        grid-area: 1 / 1 / 1 / 5; 
+    }
+    section.projects > h4 {
+        grid-area: 2 / 1 / 2 / 5;
+    }
+    section.projects .mockup{
+        grid-area: 3 / 1 / 3 / 5;
+    }
+    section.projects .project-logo{
+        grid-area: 4 / 1 / 4 / 2;
+    }
+    section.projects :deep(.fact-container){
+        align-self: flex-start;
+        grid-area: 4 / 3 / 4 / 5; 
+    }
+    section.projects .attributes{
+        grid-area: 5 / 1 / 5 / 5; 
+    }
+    section.projects .cta-container{
+        grid-area: 6 / 1 / 6 / 5; 
+    }
 }
 </style>

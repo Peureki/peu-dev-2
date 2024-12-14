@@ -2,9 +2,9 @@
     <header>
         <nav>
             <NuxtLink to="/"><img class="logo" :src="Logo" alt="Logo" title="Logo" > </NuxtLink>
-            <NuxtLink to="/about">services</NuxtLink>
-            <NuxtLink>projects</NuxtLink>
-            <NuxtLink>let's connect</NuxtLink>
+            <NuxtLink to="/#services">services</NuxtLink>
+            <NuxtLink to="/#projects">projects</NuxtLink>
+            <NuxtLink to="/#contact">let's connect</NuxtLink>
         </nav>
     </header>
     
@@ -37,11 +37,6 @@ nav > a {
     font-family: var(--font-family-mulish);
     text-decoration: none;
     mix-blend-mode: difference;
-}
-@media (max-width: 768px){
-    nav {
-        
-    }
 }
 
 </style>
