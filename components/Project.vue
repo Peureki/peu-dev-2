@@ -2,7 +2,7 @@
     <section class="projects grid">
         <h3 v-if="headerToggle" class="header-logo">
             <div class="overflow-hidden">
-                <div class="overflow-h3 green">featured</div>
+                <div class="overflow-h3 green">our</div>
             </div>
             <div class="overflow-hidden">
                 <div class="overflow-h3 pink">.</div>

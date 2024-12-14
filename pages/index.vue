@@ -13,7 +13,7 @@
             </div>
             <div class="overflow-hidden">
                 <div class="overflow-text">
-                    curating a spotlight for
+                    curating spotlights for
                 </div>
             </div>
             <div class="overflow-hidden">
@@ -108,7 +108,7 @@
 
         <h4 class="sub-header">the magic behind the curtain</h4>
 
-        <p id="description">No matter where or how a website is built, it's through code. Even page builders such as Wordpress or Squarespace. We believe that having the code be as first-party as possible is the best way to maintain longevity, security, and keeping up-to-date. It's like Legos to us. Because we make it "from scratch", your website and tools will have the freedom to be designed and be implemented any way you like. Let us know your ideas and we'll come up with solutions for you.
+        <p id="description">No matter where or how a website is built, it's through code. Even page builders such as Wordpress or Squarespace. We believe that having the code be as first-party as possible is the best way to maintain security and keeping up-to-date. Because we make it "from scratch", your website and tools will have the freedom to be designed and be implemented any way you like. Let us know your ideas and we'll build it for you!
         </p>
 
         <a class="cta" href="#contact" title="Let's connect!">
@@ -144,7 +144,7 @@
 
         <h4 class="sub-header">keep those pesky "bugs" out</h4>
  
-        <p id="description">Imagine a website as a house. Designers are the architects, developers are the builders. With any house, over time it will become outdated whether it's the content of the brand or the technology. Our job is the answer any updates you may have and to make sure that your website stays functional. You can think of us as your pocket developers!
+        <p id="description">Imagine a website as a house. Designers are the architects, developers are the builders. With any house, over time it may become outdated. Our job is the answer any updates you may have and to make sure that your website stays functional. You can think of us as your pocket developers!
         </p>
 
         <a class="cta" href="#contact" title="Let's connect!">
