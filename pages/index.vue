@@ -238,6 +238,12 @@
         
     </section>
 
+    <!--
+        *
+        * 'AND MORE' SECTION
+        * Explaining more smaller services
+        *
+    -->
     <Project
         :header-toggle="true"
         name="Shogun Japanese Steakhouse Naperville"
@@ -275,6 +281,26 @@
                     </svg>
                 </h5>
                 <p>Monthly unique page visits</p>
+            </div>
+        </template>
+    </Project>
+
+    <Project
+        name="Alfonso & Webber"
+        href="https://www.alfonsoandwebber.com/"
+        :logo="AWLogo"
+        :mockup="AWMockup"
+        :attributes="['duda', 'web design']"
+    >
+        <template v-slot:fact>
+            <div class="fact-container">
+                <h5 class="fact">
+                    25%
+                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.195 10.83L12 6.00001L7.195 1.17001C7.1516 1.11302 7.09647 1.06603 7.03333 1.0322C6.9702 0.998373 6.90053 0.978506 6.82904 0.973946C6.75756 0.969385 6.68593 0.980236 6.61901 1.00576C6.55208 1.03129 6.49142 1.0709 6.44114 1.12191C6.39085 1.17292 6.35211 1.23414 6.32754 1.30142C6.30297 1.36871 6.29315 1.44048 6.29873 1.51189C6.30431 1.5833 6.32517 1.65268 6.35989 1.71533C6.39462 1.77798 6.4424 1.83243 6.5 1.87501L10.095 5.50001L0.53 5.50001C0.397391 5.50001 0.270215 5.55269 0.176447 5.64646C0.0826787 5.74022 0.0299997 5.8674 0.0299997 6.00001C0.0299997 6.13262 0.0826787 6.2598 0.176447 6.35356C0.270215 6.44733 0.397391 6.50001 0.53 6.50001L10.095 6.50001L6.5 10.125C6.40651 10.2192 6.35425 10.3466 6.35472 10.4793C6.35519 10.612 6.40835 10.739 6.5025 10.8325C6.59665 10.926 6.72409 10.9783 6.85677 10.9778C6.98945 10.9773 7.11651 10.9242 7.21 10.83H7.195Z" fill="var(--color-text)"/>
+                    </svg>
+                </h5>
+                <p>More client connections</p>
             </div>
         </template>
     </Project>
@@ -331,10 +357,15 @@ import ShogunMockup1 from '~/assets/imgs/shogun/mockup-1.webp'
 import PRCLogo from '~/assets/imgs/peu-research-center/Peu_Choya.webp'
 import PeuMockup1 from '~/assets/imgs/peu-research-center/mockup-1.webp'
 
+// PROJECT: ALFONSO & WEBBER
+import AWLogo from '~/assets/imgs/alfonso_and_webber/logo.webp'
+import AWMockup from '~/assets/imgs/alfonso_and_webber/mockup.webp'
+
 
 import Lenis from 'lenis';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Pinball from '~/components/Pinball.vue'
+import Project from '~/components/Project.vue'
 
 // *
 // * SEO HEAD AND META
