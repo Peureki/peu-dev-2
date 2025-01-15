@@ -251,6 +251,7 @@
         :logo="ShogunLogo"
         :mockup="ShogunMockup1"
         :attributes="['restaurant', 'nuxt.js', 'netlify']"
+        id="projects"
     >
         <template v-slot:fact>
             <div class="fact-container">
